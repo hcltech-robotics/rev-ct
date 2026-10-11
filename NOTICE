@@ -1,0 +1,16 @@
+Rev
+Copyright 2026 Chris von Csefalvay
+
+Rev bundles Microsoft COLIPRI-CRM's frozen image encoder in its full checkpoint.
+COLIPRI source and model: https://huggingface.co/microsoft/colipri (MIT licence).
+Encoder revision: 892e42ec363f6c561b89c459d60fcd95ac1a99bf.
+The encoder weights retain their MIT licence. The unchanged Microsoft copyright
+and licence notice is included in COLIPRI_LICENSE. The text encoder is omitted.
+
+CT-RATE supplied training and evaluation data:
+https://huggingface.co/datasets/ibrahimhamamci/CT-RATE (CC BY-NC-SA 4.0, gated).
+Hamamci et al., A foundation model for 3D computed tomography using a large-scale
+multimodal dataset, Nature Biomedical Engineering (2024).
+https://doi.org/10.1038/s41551-024-01331-5
+This release contains no CT-RATE volume images. Upstream data access and usage
+terms remain applicable to the source data and derived materials.

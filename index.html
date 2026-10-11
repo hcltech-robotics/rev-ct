@@ -1,0 +1,163 @@
+<!doctype html>
+<!-- revct-research-page: standalone research landing page. Structure adapted from
+     SynAIRG and the Academic Project Page Template; see THIRD_PARTY_NOTICES.md. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>RevCT | A state-of-the-art typed decision model for computed tomography</title>
+  <meta name="description" content="RevCT: a compact chest CT classification model with 18 typed decisions, calibrated scores and no language decoder. Code, model, architecture and measured results.">
+  <meta name="author" content="Chris von Csefalvay, Tamas Foldi">
+  <link rel="canonical" href="https://hcltech-robotics.github.io/rev-ct/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RevCT | Fast, focused decisions from chest CT">
+  <meta property="og:description" content="A compact decision model with 18 chest CT findings, calibrated scores and an approximately 147M-parameter checkpoint.">
+  <meta property="og:url" content="https://hcltech-robotics.github.io/rev-ct/">
+  <meta property="og:image" content="https://hcltech-robotics.github.io/rev-ct/assets/revct-project.png">
+  <meta property="og:image:alt" content="RevCT processing: chest CT, preprocessing, image encoder and trained heads, typed decisions and calibrated scores.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preload" href="assets/fonts/Manrope-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="static/project.css">
+  <script src="static/project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#overview">Skip to research overview</a>
+  <main id="main-content">
+    <header class="publication-header">
+      <div class="container hero-body">
+        <h1>RevCT</h1>
+        <p class="project-subtitle">A state-of-the-art typed decision model for computed tomography</p>
+        <p class="publication-authors"><span>Chris von Csefalvay<sup><a href="#affiliation-1" aria-label="Affiliation 1 for Chris von Csefalvay">1</a></sup></span><span>Tamas Foldi<sup><a href="#affiliation-1" aria-label="Affiliation 1 for Tamas Foldi">1</a></sup></span></p>
+        <p class="affiliation" id="affiliation-1"><sup>1</sup> Robotics Intelligence CoE, HCLTech (Santa Clara, CA).</p>
+        <nav class="publication-links" aria-label="Project resources">
+          <a class="resource-button" href="https://huggingface.co/hcltech-robotics/rev-ct"><svg class="resource-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.025 1.13c-5.77 0-10.449 4.647-10.449 10.378 0 1.112.178 2.181.503 3.185.064-.222.203-.444.416-.577a.96.96 0 0 1 .524-.15c.293 0 .584.124.84.284.278.173.48.408.71.694.226.282.458.611.684.951v-.014c.017-.324.106-.622.264-.874s.403-.487.762-.543c.3-.047.596.06.787.203s.31.313.4.467c.15.257.212.468.233.542.01.026.653 1.552 1.657 2.54.616.605 1.01 1.223 1.082 1.912.055.537-.096 1.059-.38 1.572.637.121 1.294.187 1.967.187.657 0 1.298-.063 1.921-.178-.287-.517-.44-1.041-.384-1.581.07-.69.465-1.307 1.081-1.913 1.004-.987 1.647-2.513 1.657-2.539.021-.074.083-.285.233-.542.09-.154.208-.323.4-.467a1.08 1.08 0 0 1 .787-.203c.359.056.604.29.762.543s.247.55.265.874v.015c.225-.34.457-.67.683-.952.23-.286.432-.52.71-.694.257-.16.547-.284.84-.285a.97.97 0 0 1 .524.151c.228.143.373.388.43.625l.006.04a10.3 10.3 0 0 0 .534-3.273c0-5.731-4.678-10.378-10.449-10.378M8.327 6.583a1.5 1.5 0 0 1 .713.174 1.487 1.487 0 0 1 .617 2.013c-.183.343-.762-.214-1.102-.094-.38.134-.532.914-.917.71a1.487 1.487 0 0 1 .69-2.803m7.486 0a1.487 1.487 0 0 1 .689 2.803c-.385.204-.536-.576-.916-.71-.34-.12-.92.437-1.103.094a1.487 1.487 0 0 1 .617-2.013 1.5 1.5 0 0 1 .713-.174m-10.68 1.55a.96.96 0 1 1 0 1.921.96.96 0 0 1 0-1.92m13.838 0a.96.96 0 1 1 0 1.92.96.96 0 0 1 0-1.92M8.489 11.458c.588.01 1.965 1.157 3.572 1.164 1.607-.007 2.984-1.155 3.572-1.164.196-.003.305.12.305.454 0 .886-.424 2.328-1.563 3.202-.22-.756-1.396-1.366-1.63-1.32q-.011.001-.02.006l-.044.026-.01.008-.03.024q-.018.017-.035.036l-.032.04a1 1 0 0 0-.058.09l-.014.025q-.049.088-.11.19a1 1 0 0 1-.083.116 1.2 1.2 0 0 1-.173.18q-.035.029-.075.058a1.3 1.3 0 0 1-.251-.243 1 1 0 0 1-.076-.107c-.124-.193-.177-.363-.337-.444-.034-.016-.104-.008-.2.022q-.094.03-.216.087-.06.028-.125.063l-.13.074q-.067.04-.136.086a3 3 0 0 0-.135.096 3 3 0 0 0-.26.219 2 2 0 0 0-.12.121 2 2 0 0 0-.106.128l-.002.002a2 2 0 0 0-.09.132l-.001.001a1.2 1.2 0 0 0-.105.212q-.013.036-.024.073c-1.139-.875-1.563-2.317-1.563-3.203 0-.334.109-.457.305-.454m.836 10.354c.824-1.19.766-2.082-.365-3.194-1.13-1.112-1.789-2.738-1.789-2.738s-.246-.945-.806-.858-.97 1.499.202 2.362c1.173.864-.233 1.45-.685.64-.45-.812-1.683-2.896-2.322-3.295s-1.089-.175-.938.647 2.822 2.813 2.562 3.244-1.176-.506-1.176-.506-2.866-2.567-3.49-1.898.473 1.23 2.037 2.16c1.564.932 1.686 1.178 1.464 1.53s-3.675-2.511-4-1.297c-.323 1.214 3.524 1.567 3.287 2.405-.238.839-2.71-1.587-3.216-.642-.506.946 3.49 2.056 3.522 2.064 1.29.33 4.568 1.028 5.713-.624m5.349 0c-.824-1.19-.766-2.082.365-3.194 1.13-1.112 1.789-2.738 1.789-2.738s.246-.945.806-.858.97 1.499-.202 2.362c-1.173.864.233 1.45.685.64.451-.812 1.683-2.896 2.322-3.295s1.089-.175.938.647-2.822 2.813-2.562 3.244 1.176-.506 1.176-.506 2.866-2.567 3.49-1.898-.473 1.23-2.037 2.16c-1.564.932-1.686 1.178-1.464 1.53s3.675-2.511 4-1.297c.323 1.214-3.524 1.567-3.287 2.405.238.839 2.71-1.587 3.216-.642.506.946-3.49 2.056-3.522 2.064-1.29.33-4.568 1.028-5.713-.624"/></svg><span>Model</span></a>
+          <a class="resource-button" href="https://github.com/hcltech-robotics/rev-ct"><svg class="resource-icon" aria-hidden="true" focusable="false" width="20" height="20" fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>Code</span></a>
+          <a class="resource-button" href="https://huggingface.co/spaces/hcltech-robotics/rev-ct-demo"><svg class="resource-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 4.5a1 1 0 0 0-1.5.87v13.26A1 1 0 0 0 8 19.5l11.49-6.63a1 1 0 0 0 0-1.74Z"/></svg><span>Demo</span></a>
+          <a class="resource-button" href="#citation"><svg class="resource-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4 5a2 2 0 0 0-2 2v6h5v1a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5V5Zm13 0a2 2 0 0 0-2 2v6h5v1a3 3 0 0 1-3 3v2a5 5 0 0 0 5-5V5Z"/></svg><span>Cite</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="teaser" aria-labelledby="architecture-caption">
+      <div class="container">
+        <figure class="architecture-figure">
+          <div class="architecture-scroll" tabindex="0" role="region" aria-label="RevCT architecture diagram; scroll horizontally on small screens">
+          <a class="figure-link" href="assets/revct-pipeline.svg" aria-label="Open the full-size RevCT architecture diagram">
+            <img src="assets/revct-pipeline.svg" width="1280" height="800" alt="RevCT architecture: a chest CT is preprocessed, encoded by frozen COLIPRI and passed to 18 learned decision heads. Raw logits feed a decision-threshold branch and a separate isotonic-calibration branch. Training-only fitting is distinguished from inference.">
+          </a>
+          </div>
+          <figcaption id="architecture-caption">One image-encoder pass. Eighteen finding decisions. Calibrated scores on a separate branch.</figcaption>
+        </figure>
+        <div class="figure-downloads"><a href="assets/revct-pipeline.svg" download>Download SVG</a><span aria-hidden="true">·</span><a href="assets/revct-pipeline.png" download>Download PNG</a><span aria-hidden="true">·</span><a href="#architecture">Architecture details</a></div>
+        <p class="mobile-figure-note">Swipe the figure horizontally, or open it full-size.</p>
+      </div>
+    </section>
+
+    <section id="overview" class="section section-tinted">
+      <div class="prose">
+        <h2 class="centered">Overview</h2>
+        <p>RevCT turns a chest CT volume into 18 present/absent finding decisions and calibrated scores. A frozen COLIPRI image encoder and lightweight learned heads keep the complete checkpoint to approximately <strong>147 million parameters and 589 MB</strong>. There is no language decoder.</p>
+        <p>The model is designed for focused classification and sifting through research scans. In the recorded comparison with NV-Reason-CT’s 18-question Yes/No protocol, fast-preprocessing RevCT averaged <strong>2.856 seconds per scan</strong>, compared with <strong>21.796 seconds</strong> for NV-Reason-CT: a <strong>7.63× ratio of mean latencies</strong>. <a href="#latency">Timing scope and results</a>.</p>
+        <p>The <strong>System 1/System 2</strong> analogy captures the complementary roles: rapid, fixed-vocabulary decisions alongside more deliberate reasoning. Complex models like NVIDIA’s <a href="https://huggingface.co/nvidia/NV-Reason-CT">NV-Reason-CT</a> support broader reasoning, report generation and question answering. RevCT supplies a small, focused classification model for the parts of that workflow when time is of the essence.</p>
+      </div>
+    </section>
+
+    <section id="architecture" class="section">
+      <div class="prose">
+        <h2>From a CT volume to typed decisions</h2>
+        <p>HU-valued NIfTI input is oriented to RAS, resampled to 2 mm isotropic spacing, clipped and scaled, then cropped or padded to a centred 192³ volume. The frozen COLIPRI encoder projects its features before attention pooling, producing a 768-dimensional representation for the 18 learned finding heads.</p>
+        <p><strong>Decisions and calibrated scores follow separate paths.</strong> A present/absent decision compares each raw logit with its learned decision threshold. Sigmoid followed by an isotonic mapping produces the calibrated score independently; a score of 0.5 is not necessarily the decision boundary. Decision confidence is the score when present, or one minus the score when absent.</p>
+        <p>Training fits 18 class-balanced logistic regressions. Five shuffled, volume-level folds produce out-of-fold predictions for F1 threshold selection and separate isotonic calibration; final heads are refitted on the training frame. Inference loads these learned components and returns a structured record. See the <a href="https://github.com/hcltech-robotics/rev-ct/blob/v0.3.2/docs/inference.md#output-contract">output contract</a> for decision and confidence fields.</p>
+      </div>
+    </section>
+
+    <section id="results" class="section section-tinted">
+      <div class="prose">
+        <h2>Classification on CT-RATE</h2>
+        <p>On the corrected <strong>3,002-volume</strong> CT-RATE validation cohort, RevCT records state-of-the-art macro-F1 performance and parity of macro-AUROC.</p>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="Classification comparison">
+          <table>
+            <thead><tr><th scope="col">Model</th><th scope="col">Macro-F1</th><th scope="col">Macro-AUROC</th></tr></thead>
+            <tbody><tr><th scope="row">RevCT</th><td><strong>0.6154</strong></td><td><strong>0.8715</strong></td></tr><tr><th scope="row">NV-Reason-CT <span class="table-note">(published)</span></th><td>0.614</td><td>0.871</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <figure class="container result-figure">
+        <a class="figure-link" href="assets/classification-comparison.svg" aria-label="Open the full-size classification comparison"><img src="assets/classification-comparison.svg" width="864" height="468" loading="lazy" alt="Published 18-class comparison of macro-F1 and macro-AUROC. RevCT: 0.6154 and 0.8715; NV-Reason-CT: 0.614 and 0.871."></a>
+        <figcaption>Published baseline results and RevCT’s converted-checkpoint evaluation. <a href="assets/classification-comparison.svg" download>SVG</a> · <a href="assets/classification-comparison.pdf" download>PDF</a></figcaption>
+      </figure>
+    </section>
+
+    <section id="latency" class="section">
+      <div class="prose">
+        <h2>A volume every 2.856 seconds</h2>
+        <p>Across 64 CT volumes, RevCT averaged <strong>2.856 seconds per volume</strong>, with a 95th-percentile time of 4.201 seconds. On the same NVIDIA A100 80 GB and 12 vCPUs, NV-Reason-CT’s 18-question Yes/No protocol averaged 21.796 seconds.</p>
+      </div>
+      <figure class="container result-figure">
+        <a class="figure-link" href="assets/inference-comparison.svg" aria-label="Open the full-size latency comparison"><img src="assets/inference-comparison.svg" width="1560" height="768" loading="lazy" alt="Inference latency by output contract, showing mean and p95. RevCT fast preprocessing averages 2.856 seconds per volume; the NV-Reason-CT 18-question protocol averages 21.796 seconds."></a>
+        <figcaption>Warm, batch-one latency. Output contracts are grouped separately. <a href="assets/inference-comparison.svg" download>SVG</a> · <a href="assets/inference-comparison.pdf" download>PDF</a></figcaption>
+      </figure>
+      <div class="prose">
+        <ul class="protocol-list">
+          <li><strong>Included:</strong> preprocessing, transfer, inference and postprocessing, from warm local NIfTI input to CPU-visible output.</li>
+          <li><strong>Excluded:</strong> downloads, model loading and initial inference. RevCT used fp32, with TF32 disabled.</li>
+        </ul>
+        <details class="size-details">
+          <summary>Model size and checkpoint context</summary>
+          <p>RevCT’s approximately 147M parameters and 589 MB checkpoint include its frozen image encoder and calibrated heads. It needs no second encoder-weight download or remote Python code.</p>
+          <a class="figure-link" href="assets/model-size-comparison.svg"><img src="assets/model-size-comparison.svg" width="1080" height="504" loading="lazy" alt="Model parameter counts by published source convention. RevCT includes its image encoder and trained heads."></a>
+          <p class="method-note">NVIDIA’s model card lists 4.69B total parameters and a 4.35B active pathway; Hugging Face metadata reports 5,322M.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="get-started" class="section section-tinted">
+      <div class="prose">
+        <h2>Try RevCT</h2>
+        <p><a class="resource-button demo-link" href="https://huggingface.co/spaces/hcltech-robotics/rev-ct-demo"><svg class="resource-icon" aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 4.5a1 1 0 0 0-1.5.87v13.26A1 1 0 0 0 8 19.5l11.49-6.63a1 1 0 0 0 0-1.74Z"/></svg><span>Demo</span></a></p>
+        <p>Use Python 3.11+ and a GPU-compatible PyTorch installation. The release pins Transformers 5.6.2 and COLIPRI 0.1.3.</p>
+        <pre><code>git clone https://github.com/hcltech-robotics/rev-ct.git
+cd rev-ct
+git checkout v0.3.2
+python -m pip install '.[inference]'
+hf auth login
+rev-ct predict chest.nii.gz --preprocessing fast --output decisions.jsonl</code></pre>
+        <p>Supply HU-valued NIfTI volumes with correct physical geometry; convert DICOM first. Reference preprocessing remains the default. The explicit fast path matched every voxel on 64 tested scans and falls back for unsupported geometry.</p>
+        <p><a href="https://github.com/hcltech-robotics/rev-ct/blob/v0.3.2/docs/inference.md">Inference guide</a> · <a href="https://github.com/hcltech-robotics/rev-ct/releases/tag/v0.3.2">Release v0.3.2</a></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="prose">
+        <h2>Use and Limitations</h2>
+        <p>RevCT has not been clinically validated and is not intended for diagnosis or treatment. Its fixed vocabulary cannot establish a complete normal examination. It does not localise findings, and mean-score burden is not a validated severity measure. Calibration must be checked when acquisition methods or populations change.</p>
+        <p>Code and learned heads are <a href="LICENSE">Apache-2.0</a>; the bundled COLIPRI encoder retains its <a href="COLIPRI_LICENSE">MIT licence</a>. CT-RATE has separate dataset terms. See the <a href="NOTICE">notice</a> and <a href="https://github.com/hcltech-robotics/rev-ct/blob/v0.3.2/docs/model-card.md">model card</a>.</p>
+      </div>
+    </section>
+
+    <section id="citation" class="section citation-section">
+      <div class="prose">
+        <h2>How to cite</h2>
+        <p>Chris von Csefalvay and Tamas Foldi. <em>RevCT: A typed decision model for computed tomography (CT).</em> Software release v0.3.2, 2026. <a href="https://doi.org/10.57967/hf/10861">DOI: 10.57967/hf/10861</a>.</p>
+        <div class="citation-actions"><a href="revct.bib" download>Download BibTeX</a><a href="CITATION.cff" download>CITATION.cff</a><button type="button" id="copy-citation">Copy BibTeX</button><span id="copy-status" role="status" aria-live="polite"></span></div>
+        <pre><code id="bibtex">@software{voncsefalvay2026revct,
+  author  = {von Csefalvay, Chris and Foldi, Tamas},
+  title   = {RevCT: A typed decision model for computed tomography (CT)},
+  year    = {2026},
+  version = {0.3.2},
+  doi     = {10.57967/hf/10861},
+  url     = {https://github.com/hcltech-robotics/rev-ct}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="prose centered">
+      <p>HCLTech Robotics Intelligence CoE</p>
+      <p>Project-page layout adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a>, originally based on <a href="https://nerfies.github.io/">Nerfies</a>. <a href="THIRD_PARTY_NOTICES.md">Page credits and licences</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
