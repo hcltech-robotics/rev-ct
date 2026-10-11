@@ -17,7 +17,7 @@ tags:
 - multi-label-classification
 - calibration
 - safetensors
-thumbnail: https://huggingface.co/hcltech-robotics/rev-ct/resolve/main/assets/social-preview.jpg
+thumbnail: https://hcltech-robotics.github.io/rev-ct/assets/revct-social-card.png
 model-index:
 - name: Rev CT
   results:
@@ -113,7 +113,7 @@ rev_metadata:
   encoder_license: MIT
 ---
 
-![RevCT](../assets/social-preview.jpg)
+![RevCT: typed decisions from chest CT, with 18 findings and calibrated scores.](https://hcltech-robotics.github.io/rev-ct/assets/revct-social-card.png)
 
 <p align="center">
   <a href="https://github.com/hcltech-robotics/rev-ct">Code and documentation</a><br>

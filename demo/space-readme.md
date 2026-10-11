@@ -17,6 +17,7 @@ tags:
 - medical-imaging
 - multi-label-classification
 short_description: Calibrated typed decisions for chest CT
+thumbnail: https://hcltech-robotics.github.io/rev-ct/assets/revct-social-card.png
 ---
 
 # RevCT

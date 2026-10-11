@@ -1,4 +1,4 @@
-![RevCT](assets/social-preview.jpg)
+![RevCT: typed decisions from chest CT, with 18 findings and calibrated scores.](https://hcltech-robotics.github.io/rev-ct/assets/revct-social-card.png)
 
 # RevCT
 
