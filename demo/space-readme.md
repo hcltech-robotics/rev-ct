@@ -27,7 +27,7 @@ Explore a chest CT in axial, coronal and sagittal views, obtain the 18 CT-RATE f
 
 [Model and weights](https://huggingface.co/hcltech-robotics/rev-ct) · [Code](https://github.com/hcltech-robotics/rev-ct) · [Local demo](https://github.com/hcltech-robotics/rev-ct/tree/main/demo) · [Citation](https://doi.org/10.57967/hf/10861)
 
-The public example's decisions were computed with the complete RevCT v0.3.2 checkpoint and are precomputed for immediate display. Uploaded NIfTI scans run live with ZeroGPU. Preprocessing runs on CPU; the model uses fp32 inference and reserves GPU time only for its forward pass.
+The public example's decisions were computed with the complete RevCT v0.3.2 checkpoint and are precomputed for immediate display. Files matching the example's bytes use these results, including renamed uploads; other NIfTI scans run live with ZeroGPU. Preprocessing runs on CPU; the model uses fp32 inference and reserves GPU time only for its forward pass.
 
 RevCT is a research model and has not been clinically validated. Do not use it for diagnosis or treatment. Upload only de-identified scans that you have permission to share. Run the demo locally for private data.
 

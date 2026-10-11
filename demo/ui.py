@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any
 
 import gradio as gr
+from gradio.processing_utils import move_files_to_cache
 
 MODEL_URL = "https://huggingface.co/hcltech-robotics/rev-ct"
 CODE_URL = "https://github.com/hcltech-robotics/rev-ct"
@@ -98,8 +99,14 @@ def build_demo(backend: Any) -> gr.Blocks:
                 gr.Markdown("Input: Hounsfield units and physical voxel spacing.")
                 examples = backend.available_examples()
                 if examples:
+                    # Examples retain their FileData for the life of the app.
+                    # Keep bundled files available when temporary uploads expire.
+                    for (example_path,) in examples:
+                        move_files_to_cache(
+                            volume.postprocess(example_path), volume, keep_in_cache=True,
+                        )
                     gr.Examples(examples=examples, inputs=[volume], label="Examples")
-                    gr.Markdown("Example output is precomputed; uploaded scans run live.")
+                    gr.Markdown("Files matching the example use precomputed results; other scans run live.")
                 with gr.Row():
                     analyze = gr.Button("Analyze CT", variant="primary", interactive=False)
                     clear = gr.Button("Clear")
