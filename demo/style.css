@@ -1,0 +1,8 @@
+.gradio-container {
+  max-width: 1180px !important;
+  width: 100% !important;
+  min-width: 0 !important;
+}
+.gradio-container > .main { min-width: 0 !important; }
+#rev-header h1 { font-size: 28px; }
+#rev-slice-viewer img { object-fit: contain; }

@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rev-ct"
+version = "0.3.2"
+description = "A typed decision model for computed tomography (CT)."
+readme = "README.md"
+authors = [{name = "Chris von Csefalvay"}, {name = "Tamas Foldi"}]
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "COLIPRI_LICENSE"]
+dependencies = ["numpy>=1.26,<3", "scipy>=1.13,<2", "safetensors>=0.4.5,<1", "huggingface-hub>=1,<2", "jsonschema>=4.23,<5"]
+
+[project.optional-dependencies]
+inference = ["colipri==0.1.3", "torch>=2.6,<3", "transformers==5.6.2", "dynamic-network-architectures==0.4.3", "torchio==1.2.1", "SimpleITK==2.5.6"]
+transformers = ["torch>=2.6,<3", "transformers==5.6.2"]
+demo = ["gradio==6.30.0", "spaces==0.51.3", "Pillow>=11,<13", "nibabel==5.4.2"]
+export = ["joblib>=1.4,<2", "scikit-learn==1.8.0"]
+test = ["pytest>=8,<10", "scikit-learn==1.8.0", "joblib>=1.4,<2", "torch>=2.6,<3", "transformers==5.6.2", "colipri==0.1.3", "dynamic-network-architectures==0.4.3", "torchio==1.2.1", "SimpleITK==2.5.6"]
+
+[project.scripts]
+rev-ct = "rev_ct.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/hcltech-robotics/rev-ct"
+Documentation = "https://github.com/hcltech-robotics/rev-ct/tree/main/docs"
+Weights = "https://huggingface.co/hcltech-robotics/rev-ct"
+Issues = "https://github.com/hcltech-robotics/rev-ct/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]

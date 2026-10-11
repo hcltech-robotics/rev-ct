@@ -1,0 +1,134 @@
+{
+  "worker_index": 0,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "scope": "same 64-scan cohort, one timed fast forward per volume; reference pixels checked separately",
+  "samples": [
+    {
+      "volume": "valid_675_a_2.nii.gz",
+      "total_s": 2.865424791991245,
+      "preprocess_s": 1.9681755059864372,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_740_a_2.nii.gz",
+      "total_s": 4.165838397981133,
+      "preprocess_s": 3.2692514109658077,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_458_a_1.nii.gz",
+      "total_s": 1.9504906850052066,
+      "preprocess_s": 1.055358798999805,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_901_a_2.nii.gz",
+      "total_s": 2.7689567109919153,
+      "preprocess_s": 1.8733073599869385,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_851_a_2.nii.gz",
+      "total_s": 2.514762957987841,
+      "preprocess_s": 1.6199608259485103,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_74_a_1.nii.gz",
+      "total_s": 4.207100004015956,
+      "preprocess_s": 3.3114574790233746,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_114_a_2.nii.gz",
+      "total_s": 1.7859212340554222,
+      "preprocess_s": 0.8907530920114368,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_361_a_2.nii.gz",
+      "total_s": 2.6398271350190043,
+      "preprocess_s": 1.7440051659941673,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_838_a_2.nii.gz",
+      "total_s": 2.5209184719715267,
+      "preprocess_s": 1.6252507019671611,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_713_b_1.nii.gz",
+      "total_s": 4.140357620024588,
+      "preprocess_s": 3.244818772014696,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_701_a_2.nii.gz",
+      "total_s": 2.288346154964529,
+      "preprocess_s": 1.3935092659667134,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_434_a_1.nii.gz",
+      "total_s": 2.9529532269807532,
+      "preprocess_s": 2.057759686955251,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_627_a_2.nii.gz",
+      "total_s": 2.6091233830084093,
+      "preprocess_s": 1.7136311139911413,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_529_a_2.nii.gz",
+      "total_s": 3.8549728890066035,
+      "preprocess_s": 2.959151422022842,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_303_a_2.nii.gz",
+      "total_s": 2.1223737269756384,
+      "preprocess_s": 1.2276444159797393,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    },
+    {
+      "volume": "valid_997_a_2.nii.gz",
+      "total_s": 2.673202992998995,
+      "preprocess_s": 1.777931232994888,
+      "changed_voxels": 0,
+      "max_pixel_error": 0
+    }
+  ],
+  "summary": {
+    "n": 16,
+    "mean_s": 2.878785648936173,
+    "p50_s": 2.6565150640089996,
+    "p95_s": 4.176153799489839,
+    "volumes_per_second": 0.3473686901174946
+  },
+  "parallel": {
+    "wall_s": 22.865853619994596,
+    "workers": 4,
+    "includes_startup": true,
+    "volumes_per_second": 0.6997333345127826,
+    "max_score_error": 0,
+    "decision_disagreements": 0
+  }
+}

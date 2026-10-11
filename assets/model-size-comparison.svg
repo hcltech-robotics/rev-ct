@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="352.8pt" viewBox="0 0 864 352.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 352.8 
+L 864 352.8 
+L 864 0 
+L 0 0 
+z
+" style="fill: #faf9f6"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 276.48 243.432 
+L 803.52 243.432 
+L 803.52 109.368 
+L 276.48 109.368 
+z
+" style="fill: #faf9f6"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m03399de69c" d="M 0 0 
+L 0 3 
+" style="stroke: #777777; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m03399de69c" x="276.48" y="243.432" style="fill: #777777; stroke: #777777; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #777777" x="276.48" y="258.127625" transform="rotate(-0 276.48 258.127625)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m03399de69c" x="374.99215" y="243.432" style="fill: #777777; stroke: #777777; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #777777" x="374.99215" y="258.127625" transform="rotate(-0 374.99215 258.127625)">1</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m03399de69c" x="473.504299" y="243.432" style="fill: #777777; stroke: #777777; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #777777" x="473.504299" y="258.127625" transform="rotate(-0 473.504299 258.127625)">2</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m03399de69c" x="572.016449" y="243.432" style="fill: #777777; stroke: #777777; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #777777" x="572.016449" y="258.127625" transform="rotate(-0 572.016449 258.127625)">3</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m03399de69c" x="670.528598" y="243.432" style="fill: #777777; stroke: #777777; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #777777" x="670.528598" y="258.127625" transform="rotate(-0 670.528598 258.127625)">4</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m03399de69c" x="769.040748" y="243.432" style="fill: #777777; stroke: #777777; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #777777" x="769.040748" y="258.127625" transform="rotate(-0 769.040748 258.127625)">5</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 12px; font-family: 'STIXGeneral'; text-anchor: middle; fill: #222222" x="540" y="278.927625" transform="rotate(-0 540 278.927625)">Billions of parameter values</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7"/>
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'STIXGeneral'; text-anchor: end; fill: #222222" x="266.48" y="127.508089" transform="rotate(-0 266.48 127.508089)">Rev · complete model</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8"/>
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'STIXGeneral'; text-anchor: end; fill: #222222" x="266.48" y="180.497813" transform="rotate(-0 266.48 180.497813)">NV-Reason-CT · active CT pathway</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9"/>
+     <g id="text_10">
+      <text style="font-size: 12px; font-family: 'STIXGeneral'; text-anchor: end; fill: #222222" x="266.48" y="233.487536" transform="rotate(-0 266.48 233.487536)">NV-Reason-CT · complete checkpoint</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 276.48 115.461818 
+L 290.961286 115.461818 
+L 290.961286 131.358735 
+L 276.48 131.358735 
+z
+" clip-path="url(#pbf23bdf2cb)" style="fill: #222222"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 276.48 168.451542 
+L 705.00785 168.451542 
+L 705.00785 184.348458 
+L 276.48 184.348458 
+z
+" clip-path="url(#pbf23bdf2cb)" style="fill: #aaaaaa"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 276.48 221.441265 
+L 738.501981 221.441265 
+L 738.501981 237.338182 
+L 276.48 237.338182 
+z
+" clip-path="url(#pbf23bdf2cb)" style="fill: #aaaaaa"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 276.48 243.432 
+L 803.52 243.432 
+" style="fill: none; stroke: #bbb9b4; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'STIXGeneral'; text-anchor: start; fill: #222222" x="297.857136" y="126.205902" transform="rotate(-0 297.857136 126.205902)">0.147B</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'STIXGeneral'; text-anchor: start; fill: #222222" x="711.903701" y="179.195625" transform="rotate(-0 711.903701 179.195625)">4.35B</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'STIXGeneral'; text-anchor: start; fill: #222222" x="745.397832" y="232.185348" transform="rotate(-0 745.397832 232.185348)">4.69B</text>
+   </g>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 25px; font-family: 'STIXGeneral'; text-anchor: start; fill: #222222" x="51.84" y="35.28" transform="rotate(-0 51.84 35.28)">A compact CT decision model</text>
+  </g>
+  <g id="text_15">
+   <text style="font-size: 13px; font-family: 'STIXGeneral'; text-anchor: start; fill: #222222" x="51.84" y="63.504" transform="rotate(-0 51.84 63.504)">589 MB complete fp32 checkpoint</text>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 10px; font-family: 'STIXGeneral'; fill: #666666" transform="translate(51.84 313.242188)">Complete-model counts are approximate. NV sizes are published rounded counts.</text>
+   <text style="font-size: 10px; font-family: 'STIXGeneral'; fill: #666666" transform="translate(51.84 326.34)">The checkpoint includes the encoder and the calibrated decision model.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbf23bdf2cb">
+   <rect x="276.48" y="109.368" width="527.04" height="134.064"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RevTypedDecision",
+  "type": "object",
+  "required": [
+    "volume",
+    "schema_version",
+    "decisions",
+    "choice",
+    "score"
+  ],
+  "properties": {
+    "volume": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "rev-1.0"
+    },
+    "decisions": {
+      "type": "array",
+      "minItems": 18,
+      "maxItems": 18,
+      "items": {
+        "type": "object",
+        "required": [
+          "finding",
+          "decision",
+          "confidence",
+          "score"
+        ],
+        "properties": {
+          "finding": {
+            "enum": [
+              "Medical material",
+              "Arterial wall calcification",
+              "Cardiomegaly",
+              "Pericardial effusion",
+              "Coronary artery wall calcification",
+              "Hiatal hernia",
+              "Lymphadenopathy",
+              "Emphysema",
+              "Atelectasis",
+              "Lung nodule",
+              "Lung opacity",
+              "Pulmonary fibrotic sequela",
+              "Pleural effusion",
+              "Mosaic attenuation pattern",
+              "Peribronchial thickening",
+              "Consolidation",
+              "Bronchiectasis",
+              "Interlobular septal thickening"
+            ]
+          },
+          "decision": {
+            "enum": [
+              "present",
+              "absent"
+            ]
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "choice": {
+      "type": "object",
+      "required": [
+        "top_findings"
+      ],
+      "properties": {
+        "top_findings": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "Medical material",
+              "Arterial wall calcification",
+              "Cardiomegaly",
+              "Pericardial effusion",
+              "Coronary artery wall calcification",
+              "Hiatal hernia",
+              "Lymphadenopathy",
+              "Emphysema",
+              "Atelectasis",
+              "Lung nodule",
+              "Lung opacity",
+              "Pulmonary fibrotic sequela",
+              "Pleural effusion",
+              "Mosaic attenuation pattern",
+              "Peribronchial thickening",
+              "Consolidation",
+              "Bronchiectasis",
+              "Interlobular septal thickening"
+            ]
+          }
+        }
+      }
+    },
+    "score": {
+      "type": "object",
+      "required": [
+        "burden",
+        "n_positive"
+      ],
+      "properties": {
+        "burden": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "n_positive": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 18
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,325 @@
+{
+  "format_version": "rev-safetensors-1",
+  "schema_version": "rev-1.0",
+  "labels": [
+    "Medical material",
+    "Arterial wall calcification",
+    "Cardiomegaly",
+    "Pericardial effusion",
+    "Coronary artery wall calcification",
+    "Hiatal hernia",
+    "Lymphadenopathy",
+    "Emphysema",
+    "Atelectasis",
+    "Lung nodule",
+    "Lung opacity",
+    "Pulmonary fibrotic sequela",
+    "Pleural effusion",
+    "Mosaic attenuation pattern",
+    "Peribronchial thickening",
+    "Consolidation",
+    "Bronchiectasis",
+    "Interlobular septal thickening"
+  ],
+  "feature_dim": 768,
+  "encoder": {
+    "repo_id": "microsoft/colipri",
+    "revision": "892e42ec363f6c561b89c459d60fcd95ac1a99bf",
+    "package_version": "0.1.3",
+    "pool": true,
+    "project": true,
+    "normalize": false,
+    "input_size": [
+      192,
+      192,
+      192
+    ],
+    "dtype": "float32",
+    "feature_storage_dtype": "float16"
+  },
+  "source": {
+    "repo_id": "chrisvoncsefalvay/ct-rate-colipri-probe",
+    "revision": "e93a9ecd27e4153bab56258bdd97f7c4668ff9e2",
+    "artifact": "typed_calibration.joblib"
+  },
+  "calibration_input": "raw_probability",
+  "default_head_mode": "reference",
+  "model_type": "rev_ct",
+  "architectures": [
+    "RevModel"
+  ],
+  "auto_map": {
+    "AutoConfig": "configuration_rev_ct.RevConfig",
+    "AutoModel": "modeling_rev_ct.RevModel"
+  },
+  "tensor_specs": {
+    "head.decision_bias": {
+      "shape": [
+        18
+      ],
+      "dtype": "float64"
+    },
+    "head.raw_bias": {
+      "shape": [
+        18
+      ],
+      "dtype": "float64"
+    },
+    "head.weight": {
+      "shape": [
+        18,
+        768
+      ],
+      "dtype": "float64"
+    },
+    "scaler.mean": {
+      "shape": [
+        768
+      ],
+      "dtype": "float64"
+    },
+    "scaler.scale": {
+      "shape": [
+        768
+      ],
+      "dtype": "float64"
+    },
+    "calibration.0.x": {
+      "shape": [
+        128
+      ],
+      "dtype": "float32"
+    },
+    "calibration.0.y": {
+      "shape": [
+        128
+      ],
+      "dtype": "float32"
+    },
+    "calibration.1.x": {
+      "shape": [
+        148
+      ],
+      "dtype": "float32"
+    },
+    "calibration.1.y": {
+      "shape": [
+        148
+      ],
+      "dtype": "float32"
+    },
+    "calibration.10.x": {
+      "shape": [
+        168
+      ],
+      "dtype": "float32"
+    },
+    "calibration.10.y": {
+      "shape": [
+        168
+      ],
+      "dtype": "float32"
+    },
+    "calibration.11.x": {
+      "shape": [
+        158
+      ],
+      "dtype": "float32"
+    },
+    "calibration.11.y": {
+      "shape": [
+        158
+      ],
+      "dtype": "float32"
+    },
+    "calibration.12.x": {
+      "shape": [
+        106
+      ],
+      "dtype": "float32"
+    },
+    "calibration.12.y": {
+      "shape": [
+        106
+      ],
+      "dtype": "float32"
+    },
+    "calibration.13.x": {
+      "shape": [
+        138
+      ],
+      "dtype": "float32"
+    },
+    "calibration.13.y": {
+      "shape": [
+        138
+      ],
+      "dtype": "float32"
+    },
+    "calibration.14.x": {
+      "shape": [
+        132
+      ],
+      "dtype": "float32"
+    },
+    "calibration.14.y": {
+      "shape": [
+        132
+      ],
+      "dtype": "float32"
+    },
+    "calibration.15.x": {
+      "shape": [
+        134
+      ],
+      "dtype": "float32"
+    },
+    "calibration.15.y": {
+      "shape": [
+        134
+      ],
+      "dtype": "float32"
+    },
+    "calibration.16.x": {
+      "shape": [
+        120
+      ],
+      "dtype": "float32"
+    },
+    "calibration.16.y": {
+      "shape": [
+        120
+      ],
+      "dtype": "float32"
+    },
+    "calibration.17.x": {
+      "shape": [
+        112
+      ],
+      "dtype": "float32"
+    },
+    "calibration.17.y": {
+      "shape": [
+        112
+      ],
+      "dtype": "float32"
+    },
+    "calibration.2.x": {
+      "shape": [
+        128
+      ],
+      "dtype": "float32"
+    },
+    "calibration.2.y": {
+      "shape": [
+        128
+      ],
+      "dtype": "float32"
+    },
+    "calibration.3.x": {
+      "shape": [
+        122
+      ],
+      "dtype": "float32"
+    },
+    "calibration.3.y": {
+      "shape": [
+        122
+      ],
+      "dtype": "float32"
+    },
+    "calibration.4.x": {
+      "shape": [
+        138
+      ],
+      "dtype": "float32"
+    },
+    "calibration.4.y": {
+      "shape": [
+        138
+      ],
+      "dtype": "float32"
+    },
+    "calibration.5.x": {
+      "shape": [
+        138
+      ],
+      "dtype": "float32"
+    },
+    "calibration.5.y": {
+      "shape": [
+        138
+      ],
+      "dtype": "float32"
+    },
+    "calibration.6.x": {
+      "shape": [
+        136
+      ],
+      "dtype": "float32"
+    },
+    "calibration.6.y": {
+      "shape": [
+        136
+      ],
+      "dtype": "float32"
+    },
+    "calibration.7.x": {
+      "shape": [
+        138
+      ],
+      "dtype": "float32"
+    },
+    "calibration.7.y": {
+      "shape": [
+        138
+      ],
+      "dtype": "float32"
+    },
+    "calibration.8.x": {
+      "shape": [
+        162
+      ],
+      "dtype": "float32"
+    },
+    "calibration.8.y": {
+      "shape": [
+        162
+      ],
+      "dtype": "float32"
+    },
+    "calibration.9.x": {
+      "shape": [
+        158
+      ],
+      "dtype": "float32"
+    },
+    "calibration.9.y": {
+      "shape": [
+        158
+      ],
+      "dtype": "float32"
+    },
+    "decision.threshold_bias": {
+      "shape": [
+        18
+      ],
+      "dtype": "float32"
+    },
+    "head.original_bias": {
+      "shape": [
+        18
+      ],
+      "dtype": "float32"
+    },
+    "head.original_weight": {
+      "shape": [
+        18,
+        768
+      ],
+      "dtype": "float32"
+    }
+  },
+  "reference_dtype": "float32",
+  "folded_dtype": "float64"
+}

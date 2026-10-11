@@ -1,0 +1,137 @@
+{
+  "n": 3039,
+  "n_unique": 3039,
+  "feature_revision": "8c002ae7cc0eca9e89a9f4a901af587f5e2fa2c6",
+  "max_probability_error": 5.081575587095877e-06,
+  "max_score_error": 0.0012875199317932129,
+  "decision_disagreements": 0,
+  "matched_records": 3039,
+  "record_decision_mismatches": 0,
+  "raw_input_max_score_error": 4.999999999999449e-05,
+  "adjusted_input_max_score_error": 0.47178263020515443,
+  "first_record": {
+    "volume": "valid_2_a_2.nii.gz",
+    "schema_version": "rev-1.0",
+    "decisions": [
+      {
+        "finding": "Medical material",
+        "decision": "absent",
+        "confidence": 0.9974,
+        "score": 0.0026
+      },
+      {
+        "finding": "Arterial wall calcification",
+        "decision": "absent",
+        "confidence": 0.994,
+        "score": 0.006
+      },
+      {
+        "finding": "Cardiomegaly",
+        "decision": "absent",
+        "confidence": 0.9968,
+        "score": 0.0032
+      },
+      {
+        "finding": "Pericardial effusion",
+        "decision": "absent",
+        "confidence": 0.9368,
+        "score": 0.0632
+      },
+      {
+        "finding": "Coronary artery wall calcification",
+        "decision": "absent",
+        "confidence": 0.9986,
+        "score": 0.0014
+      },
+      {
+        "finding": "Hiatal hernia",
+        "decision": "absent",
+        "confidence": 0.9016,
+        "score": 0.0984
+      },
+      {
+        "finding": "Lymphadenopathy",
+        "decision": "present",
+        "confidence": 0.3154,
+        "score": 0.3154
+      },
+      {
+        "finding": "Emphysema",
+        "decision": "absent",
+        "confidence": 0.9539,
+        "score": 0.0461
+      },
+      {
+        "finding": "Atelectasis",
+        "decision": "absent",
+        "confidence": 0.9445,
+        "score": 0.0555
+      },
+      {
+        "finding": "Lung nodule",
+        "decision": "present",
+        "confidence": 0.9557,
+        "score": 0.9557
+      },
+      {
+        "finding": "Lung opacity",
+        "decision": "absent",
+        "confidence": 0.6563,
+        "score": 0.3437
+      },
+      {
+        "finding": "Pulmonary fibrotic sequela",
+        "decision": "present",
+        "confidence": 0.3553,
+        "score": 0.3553
+      },
+      {
+        "finding": "Pleural effusion",
+        "decision": "absent",
+        "confidence": 0.9947,
+        "score": 0.0053
+      },
+      {
+        "finding": "Mosaic attenuation pattern",
+        "decision": "absent",
+        "confidence": 0.9871,
+        "score": 0.0129
+      },
+      {
+        "finding": "Peribronchial thickening",
+        "decision": "absent",
+        "confidence": 0.9428,
+        "score": 0.0572
+      },
+      {
+        "finding": "Consolidation",
+        "decision": "present",
+        "confidence": 0.3753,
+        "score": 0.3753
+      },
+      {
+        "finding": "Bronchiectasis",
+        "decision": "absent",
+        "confidence": 0.8278,
+        "score": 0.1722
+      },
+      {
+        "finding": "Interlobular septal thickening",
+        "decision": "absent",
+        "confidence": 0.997,
+        "score": 0.003
+      }
+    ],
+    "choice": {
+      "top_findings": [
+        "Lung nodule",
+        "Consolidation",
+        "Pulmonary fibrotic sequela"
+      ]
+    },
+    "score": {
+      "burden": 0.1596,
+      "n_positive": 4
+    }
+  }
+}

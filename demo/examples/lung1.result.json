@@ -1,0 +1,125 @@
+{
+  "volume": "lung1.nii.gz",
+  "schema_version": "rev-1.0",
+  "decisions": [
+    {
+      "finding": "Medical material",
+      "decision": "absent",
+      "confidence": 0.9966418454423547,
+      "score": 0.003358154557645321
+    },
+    {
+      "finding": "Arterial wall calcification",
+      "decision": "present",
+      "confidence": 0.9414758086204529,
+      "score": 0.9414758086204529
+    },
+    {
+      "finding": "Cardiomegaly",
+      "decision": "absent",
+      "confidence": 0.9968000000808388,
+      "score": 0.0031999999191612005
+    },
+    {
+      "finding": "Pericardial effusion",
+      "decision": "absent",
+      "confidence": 0.8690987080335617,
+      "score": 0.1309012919664383
+    },
+    {
+      "finding": "Coronary artery wall calcification",
+      "decision": "present",
+      "confidence": 0.7886558175086975,
+      "score": 0.7886558175086975
+    },
+    {
+      "finding": "Hiatal hernia",
+      "decision": "absent",
+      "confidence": 0.8868479058146477,
+      "score": 0.11315209418535233
+    },
+    {
+      "finding": "Lymphadenopathy",
+      "decision": "absent",
+      "confidence": 0.8002593964338303,
+      "score": 0.19974060356616974
+    },
+    {
+      "finding": "Emphysema",
+      "decision": "present",
+      "confidence": 0.5185185074806213,
+      "score": 0.5185185074806213
+    },
+    {
+      "finding": "Atelectasis",
+      "decision": "absent",
+      "confidence": 0.723205953836441,
+      "score": 0.27679404616355896
+    },
+    {
+      "finding": "Lung nodule",
+      "decision": "present",
+      "confidence": 0.9556840062141418,
+      "score": 0.9556840062141418
+    },
+    {
+      "finding": "Lung opacity",
+      "decision": "absent",
+      "confidence": 0.8250904679298401,
+      "score": 0.1749095320701599
+    },
+    {
+      "finding": "Pulmonary fibrotic sequela",
+      "decision": "present",
+      "confidence": 0.3939899802207947,
+      "score": 0.3939899802207947
+    },
+    {
+      "finding": "Pleural effusion",
+      "decision": "absent",
+      "confidence": 0.9989492119057104,
+      "score": 0.0010507880942896008
+    },
+    {
+      "finding": "Mosaic attenuation pattern",
+      "decision": "absent",
+      "confidence": 0.9313884377479553,
+      "score": 0.06861156225204468
+    },
+    {
+      "finding": "Peribronchial thickening",
+      "decision": "present",
+      "confidence": 0.22237196564674377,
+      "score": 0.22237196564674377
+    },
+    {
+      "finding": "Consolidation",
+      "decision": "absent",
+      "confidence": 0.889415480196476,
+      "score": 0.11058451980352402
+    },
+    {
+      "finding": "Bronchiectasis",
+      "decision": "present",
+      "confidence": 0.33364927768707275,
+      "score": 0.33364927768707275
+    },
+    {
+      "finding": "Interlobular septal thickening",
+      "decision": "absent",
+      "confidence": 0.9695009235292673,
+      "score": 0.03049907647073269
+    }
+  ],
+  "choice": {
+    "top_findings": [
+      "Lung nodule",
+      "Arterial wall calcification",
+      "Coronary artery wall calcification"
+    ]
+  },
+  "score": {
+    "burden": 0.2926192879676819,
+    "n_positive": 7
+  }
+}

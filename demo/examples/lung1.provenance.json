@@ -1,0 +1,11 @@
+{
+  "model_id": "hcltech-robotics/rev-ct",
+  "revision": "v0.3.2",
+  "model_safetensors_sha256": "2c9c145ac97f96847c5a8b106e44680703a88cb898e793d9cb238271f2802380",
+  "input_sha256": "b3e88bda166d80e5a27fdc0e4b241d719371cf4b272e3cfc2beb3df70ff371d4",
+  "input_bytes": 12423766,
+  "precision": "fp32",
+  "preprocessing": "fast",
+  "source": "https://github.com/Radiomics/pyradiomics/releases/download/v1.0/lung1_image.nrrd",
+  "source_sha256": "379fa48bf34cfa961e6f5ec19c0c38757a30b9aa884212ef28dc29b5061c64ed"
+}

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+references/
+artifacts/results.json
+.superpowers/
+benchmark-data/
+benchmark-results/

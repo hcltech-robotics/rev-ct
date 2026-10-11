@@ -1,0 +1,3809 @@
+{
+  "hardware": {
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "gpu_memory_gib": 79.249755859375,
+    "cpu_count": 96,
+    "platform": "Linux-6.12.103-127.188.amzn2023.x86_64-x86_64-with-glibc2.35",
+    "python": "3.11.14",
+    "torch": "2.9.1+cu128",
+    "cuda": "12.8",
+    "packages": {
+      "colipri": "0.1.3",
+      "transformers": "5.6.2",
+      "numpy": "2.3.4",
+      "scikit-learn": "1.8.0",
+      "safetensors": "0.8.0"
+    }
+  },
+  "settings": {
+    "count": 64,
+    "repeats": 1,
+    "seed": 0,
+    "batch_size": 1,
+    "torch_cpu_threads": 1,
+    "tf32": false,
+    "data_variant": "valid_fixed",
+    "rev_precision": "fp32",
+    "worker_index": 0,
+    "num_workers": 4
+  },
+  "results": {
+    "rev": {
+      "dtype": "torch.float32",
+      "load_s": 17.153750889003277,
+      "first_inference_s": 7.950272327987477,
+      "peak_vram_gib": 1.248013973236084,
+      "summary": {
+        "n": 16,
+        "mean_s": 7.519503552121023,
+        "p50_s": 6.987446448503761,
+        "p95_s": 13.241221827483969,
+        "volumes_per_second": 0.13298750284091965
+      },
+      "samples": [
+        {
+          "volume": "valid_675_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 7.188052416953724,
+          "h2d_s": 0.006546018004883081,
+          "encoder_s": 0.888749731995631,
+          "d2h_s": 0.0008164860191754997,
+          "head_json_s": 0.0011696040164679289,
+          "total_s": 8.085334256989881
+        },
+        {
+          "volume": "valid_740_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 12.361308183986694,
+          "h2d_s": 0.006491428008303046,
+          "encoder_s": 0.8887064849841408,
+          "d2h_s": 0.00024595996364951134,
+          "head_json_s": 0.0007729720091447234,
+          "total_s": 13.257525028951932
+        },
+        {
+          "volume": "valid_458_a_1.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 2.7518340009846725,
+          "h2d_s": 0.00622720702085644,
+          "encoder_s": 0.8877734490088187,
+          "d2h_s": 0.0002658130251802504,
+          "head_json_s": 0.0006717319483868778,
+          "total_s": 3.6467722019879147
+        },
+        {
+          "volume": "valid_901_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 6.490751700010151,
+          "h2d_s": 0.006261376955080777,
+          "encoder_s": 0.8878647020319477,
+          "d2h_s": 0.00025494000874459743,
+          "head_json_s": 0.00047497201012447476,
+          "total_s": 7.385607691016048
+        },
+        {
+          "volume": "valid_851_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 4.627506334043574,
+          "h2d_s": 0.006344929977785796,
+          "encoder_s": 0.8879670990281738,
+          "d2h_s": 0.0002732449793256819,
+          "head_json_s": 0.0005567619809880853,
+          "total_s": 5.522648370009847
+        },
+        {
+          "volume": "valid_74_a_1.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 12.340686929994263,
+          "h2d_s": 0.006250390957575291,
+          "encoder_s": 0.8879954910371453,
+          "d2h_s": 0.00022791698575019836,
+          "head_json_s": 0.000626698019914329,
+          "total_s": 13.235787426994648
+        },
+        {
+          "volume": "valid_114_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 2.184901562985033,
+          "h2d_s": 0.006044571986421943,
+          "encoder_s": 0.8876959889894351,
+          "d2h_s": 0.00023273599799722433,
+          "head_json_s": 0.00044655700912699103,
+          "total_s": 3.079321416968014
+        },
+        {
+          "volume": "valid_361_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 5.915271078993101,
+          "h2d_s": 0.006208380043972284,
+          "encoder_s": 0.8883969819871709,
+          "d2h_s": 0.00026286899810656905,
+          "head_json_s": 0.0005448879674077034,
+          "total_s": 6.810684197989758
+        },
+        {
+          "volume": "valid_838_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 4.172971802006941,
+          "h2d_s": 0.006052395037841052,
+          "encoder_s": 0.8882212699973024,
+          "d2h_s": 0.0002498679677955806,
+          "head_json_s": 0.000456384033896029,
+          "total_s": 5.067951719043776
+        },
+        {
+          "volume": "valid_713_b_1.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 11.829366860038135,
+          "h2d_s": 0.006193776964209974,
+          "encoder_s": 0.8885306740412489,
+          "d2h_s": 0.00025829195510596037,
+          "head_json_s": 0.00045516504906117916,
+          "total_s": 12.724804768047761
+        },
+        {
+          "volume": "valid_701_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 3.7878974360064603,
+          "h2d_s": 0.006060287996660918,
+          "encoder_s": 0.8876878889859654,
+          "d2h_s": 0.00024691905127838254,
+          "head_json_s": 0.0005900519900023937,
+          "total_s": 4.682482584030367
+        },
+        {
+          "volume": "valid_434_a_1.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 7.082300345005933,
+          "h2d_s": 0.006304671987891197,
+          "encoder_s": 0.8880278340075165,
+          "d2h_s": 0.0002820819499902427,
+          "head_json_s": 0.0005596440169028938,
+          "total_s": 7.977474576968234
+        },
+        {
+          "volume": "valid_627_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 4.653399987961166,
+          "h2d_s": 0.006181140022817999,
+          "encoder_s": 0.8883975319913588,
+          "d2h_s": 0.0002731509739533067,
+          "head_json_s": 0.0004923060187138617,
+          "total_s": 5.54874411696801
+        },
+        {
+          "volume": "valid_529_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 11.188394684984814,
+          "h2d_s": 0.006551152968313545,
+          "encoder_s": 0.8884533430100419,
+          "d2h_s": 0.00027036102255806327,
+          "head_json_s": 0.0006883139722049236,
+          "total_s": 12.084357855957933
+        },
+        {
+          "volume": "valid_303_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 3.143334727967158,
+          "h2d_s": 0.006245377007871866,
+          "encoder_s": 0.8877544170245528,
+          "d2h_s": 0.0003332579508423805,
+          "head_json_s": 0.0006841430440545082,
+          "total_s": 4.0383519229944795
+        },
+        {
+          "volume": "valid_997_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 6.268649289035238,
+          "h2d_s": 0.006268500990699977,
+          "encoder_s": 0.8882132029975764,
+          "d2h_s": 0.00042172399116680026,
+          "head_json_s": 0.0006559820030815899,
+          "total_s": 7.164208699017763
+        }
+      ],
+      "volume_parity": [
+        {
+          "volume": "valid_675_a_2.nii.gz",
+          "max_feature_error": 0.000244140625,
+          "mean_feature_error": 0.000008479381904180627,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_675_a_2.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "present",
+                  "confidence": 0.8484349250793457,
+                  "score": 0.8484349250793457
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "present",
+                  "confidence": 0.7809667587280273,
+                  "score": 0.7809667587280273
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "present",
+                  "confidence": 0.9105691313743591,
+                  "score": 0.9105691313743591
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "present",
+                  "confidence": 0.35922330617904663,
+                  "score": 0.35922330617904663
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "present",
+                  "confidence": 0.7886558175086975,
+                  "score": 0.7886558175086975
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.9016064256429672,
+                  "score": 0.09839357435703278
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "present",
+                  "confidence": 0.2857142984867096,
+                  "score": 0.2857142984867096
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.7756939232349396,
+                  "score": 0.22430607676506042
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "present",
+                  "confidence": 0.6000000238418579,
+                  "score": 0.6000000238418579
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "present",
+                  "confidence": 0.5594251155853271,
+                  "score": 0.5594251155853271
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "present",
+                  "confidence": 0.5806451439857483,
+                  "score": 0.5806451439857483
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "present",
+                  "confidence": 0.5255703926086426,
+                  "score": 0.5255703926086426
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "absent",
+                  "confidence": 0.8571428507566452,
+                  "score": 0.1428571492433548
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 0.8055555522441864,
+                  "score": 0.1944444477558136
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "present",
+                  "confidence": 0.4412451386451721,
+                  "score": 0.4412451386451721
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "absent",
+                  "confidence": 0.7201907932758331,
+                  "score": 0.27980920672416687
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 0.915213942527771,
+                  "score": 0.084786057472229
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "present",
+                  "confidence": 0.37811899185180664,
+                  "score": 0.37811899185180664
+                }
+              ],
+              "choice": {
+                "top_findings": [
+                  "Cardiomegaly",
+                  "Medical material",
+                  "Coronary artery wall calcification"
+                ]
+              },
+              "score": {
+                "burden": 0.44906479120254517,
+                "n_positive": 12
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_740_a_2.nii.gz",
+          "max_feature_error": 0.0001220703125,
+          "mean_feature_error": 0.000016795083865872584,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_740_a_2.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "absent",
+                  "confidence": 0.9758394751697779,
+                  "score": 0.02416052483022213
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "present",
+                  "confidence": 0.7809667587280273,
+                  "score": 0.7809667587280273
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "present",
+                  "confidence": 0.3839416205883026,
+                  "score": 0.3839416205883026
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "absent",
+                  "confidence": 0.8913525491952896,
+                  "score": 0.10864745080471039
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "present",
+                  "confidence": 0.5177083611488342,
+                  "score": 0.5177083611488342
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "present",
+                  "confidence": 0.3073593080043793,
+                  "score": 0.3073593080043793
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "absent",
+                  "confidence": 0.9319059327244759,
+                  "score": 0.06809406727552414
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "present",
+                  "confidence": 0.36964377760887146,
+                  "score": 0.36964377760887146
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "present",
+                  "confidence": 0.4651341140270233,
+                  "score": 0.4651341140270233
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "present",
+                  "confidence": 0.6114180684089661,
+                  "score": 0.6114180684089661
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "absent",
+                  "confidence": 0.6562756299972534,
+                  "score": 0.3437243700027466
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "present",
+                  "confidence": 0.7994505763053894,
+                  "score": 0.7994505763053894
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "absent",
+                  "confidence": 0.9946642951108515,
+                  "score": 0.005335704889148474
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 0.9179229512810707,
+                  "score": 0.08207704871892929
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "absent",
+                  "confidence": 0.9659391529858112,
+                  "score": 0.034060847014188766
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "absent",
+                  "confidence": 0.990514905191958,
+                  "score": 0.00948509480804205
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "present",
+                  "confidence": 0.24282561242580414,
+                  "score": 0.24282561242580414
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "absent",
+                  "confidence": 0.9354838728904724,
+                  "score": 0.06451612710952759
+                }
+              ],
+              "choice": {
+                "top_findings": [
+                  "Pulmonary fibrotic sequela",
+                  "Arterial wall calcification",
+                  "Lung nodule"
+                ]
+              },
+              "score": {
+                "burden": 0.2899194359779358,
+                "n_positive": 9
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_458_a_1.nii.gz",
+          "max_feature_error": 0.0001220703125,
+          "mean_feature_error": 0.000009729371413413901,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_458_a_1.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "absent",
+                  "confidence": 0.9997350642515812,
+                  "score": 0.0002649357484187931
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.9718903731554747,
+                  "score": 0.028109626844525337
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "absent",
+                  "confidence": 0.9968000000808388,
+                  "score": 0.0031999999191612005
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "absent",
+                  "confidence": 0.9689987432211637,
+                  "score": 0.03100125677883625
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.9908519154414535,
+                  "score": 0.009148084558546543
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.8868479058146477,
+                  "score": 0.11315209418535233
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "absent",
+                  "confidence": 0.939059779047966,
+                  "score": 0.060940220952034
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.9822380114346743,
+                  "score": 0.017761988565325737
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "absent",
+                  "confidence": 0.9386120997369289,
+                  "score": 0.06138790026307106
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "absent",
+                  "confidence": 0.8050847500562668,
+                  "score": 0.19491524994373322
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "present",
+                  "confidence": 0.8740741014480591,
+                  "score": 0.8740741014480591
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "absent",
+                  "confidence": 0.9449311643838882,
+                  "score": 0.055068835616111755
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "absent",
+                  "confidence": 0.9989492119057104,
+                  "score": 0.0010507880942896008
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "absent",
+                  "confidence": 0.9961256994865835,
+                  "score": 0.0038743005134165287
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "present",
+                  "confidence": 0.561904788017273,
+                  "score": 0.561904788017273
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 0.9765247907489538,
+                  "score": 0.02347520925104618
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "absent",
+                  "confidence": 0.8524590134620667,
+                  "score": 0.14754098653793335
+                }
+              ],
+              "choice": {
+                "top_findings": [
+                  "Lung opacity",
+                  "Consolidation"
+                ]
+              },
+              "score": {
+                "burden": 0.12149281054735184,
+                "n_positive": 2
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_901_a_2.nii.gz",
+          "max_feature_error": 0.000244140625,
+          "mean_feature_error": 0.000029033670216449536,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_901_a_2.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.9993968636845239,
+                  "score": 0.0006031363154761493
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "absent",
+                  "confidence": 0.9997889404767193,
+                  "score": 0.00021105952328070998
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "absent",
+                  "confidence": 0.9975990396924317,
+                  "score": 0.0024009603075683117
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.9564044959843159,
+                  "score": 0.04359550401568413
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "absent",
+                  "confidence": 0.9798831921070814,
+                  "score": 0.020116807892918587
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.9396039620041847,
+                  "score": 0.06039603799581528
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "absent",
+                  "confidence": 0.9658119641244411,
+                  "score": 0.03418803587555885
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "absent",
+                  "confidence": 0.717391312122345,
+                  "score": 0.28260868787765503
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "absent",
+                  "confidence": 0.9723812732845545,
+                  "score": 0.02761872671544552
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "present",
+                  "confidence": 0.3939899802207947,
+                  "score": 0.3939899802207947
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 0.9997842968004989,
+                  "score": 0.00021570319950114936
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "absent",
+                  "confidence": 0.9982425307389349,
+                  "score": 0.0017574692610651255
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "absent",
+                  "confidence": 0.9979313197545707,
+                  "score": 0.0020686802454292774
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 0.9880578247830272,
+                  "score": 0.011942175216972828
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "absent",
+                  "confidence": 0.9993621635367163,
+                  "score": 0.0006378364632837474
+                }
+              ],
+              "choice": {
+                "top_findings": [
+                  "Pulmonary fibrotic sequela"
+                ]
+              },
+              "score": {
+                "burden": 0.04901948571205139,
+                "n_positive": 1
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_851_a_2.nii.gz",
+          "max_feature_error": 0.000244140625,
+          "mean_feature_error": 0.000030009387046447955,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_851_a_2.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "absent",
+                  "confidence": 0.9997350642515812,
+                  "score": 0.0002649357484187931
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.9972299169749022,
+                  "score": 0.002770083025097847
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "absent",
+                  "confidence": 0.9953956343233585,
+                  "score": 0.004604365676641464
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.9948750799521804,
+                  "score": 0.005124920047819614
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "absent",
+                  "confidence": 0.9798831921070814,
+                  "score": 0.020116807892918587
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.9396039620041847,
+                  "score": 0.06039603799581528
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "absent",
+                  "confidence": 0.9137709140777588,
+                  "score": 0.08622908592224121
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "present",
+                  "confidence": 0.6969112157821655,
+                  "score": 0.6969112157821655
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "absent",
+                  "confidence": 0.9650971367955208,
+                  "score": 0.03490286320447922
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "present",
+                  "confidence": 0.6330274939537048,
+                  "score": 0.6330274939537048
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "absent",
+                  "confidence": 0.9887820510193706,
+                  "score": 0.011217948980629444
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "absent",
+                  "confidence": 0.9981617646990344,
+                  "score": 0.0018382353009656072
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 0.9582294262945652,
+                  "score": 0.0417705737054348
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "absent",
+                  "confidence": 0.9993621635367163,
+                  "score": 0.0006378364632837474
+                }
+              ],
+              "choice": {
+                "top_findings": [
+                  "Lung nodule",
+                  "Pulmonary fibrotic sequela"
+                ]
+              },
+              "score": {
+                "burden": 0.08887846767902374,
+                "n_positive": 2
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_74_a_1.nii.gz",
+          "max_feature_error": 0.0001220703125,
+          "mean_feature_error": 0.000021100355297676288,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_74_a_1.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "absent",
+                  "confidence": 0.9966418454423547,
+                  "score": 0.003358154557645321
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.9892183290794492,
+                  "score": 0.010781670920550823
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "absent",
+                  "confidence": 0.999679281580029,
+                  "score": 0.0003207184199709445
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "absent",
+                  "confidence": 0.9953956343233585,
+                  "score": 0.004604365676641464
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.9923906149342656,
+                  "score": 0.0076093850657343864
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "absent",
+                  "confidence": 0.9686252139508724,
+                  "score": 0.03137478604912758
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.8571428507566452,
+                  "score": 0.1428571492433548
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "absent",
+                  "confidence": 0.9137709140777588,
+                  "score": 0.08622908592224121
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "present",
+                  "confidence": 0.4207603633403778,
+                  "score": 0.4207603633403778
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "absent",
+                  "confidence": 0.791739895939827,
+                  "score": 0.20826010406017303
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "present",
+                  "confidence": 0.7677286863327026,
+                  "score": 0.7677286863327026
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 0.9984770606970415,
+                  "score": 0.001522939302958548
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "absent",
+                  "confidence": 0.9834080711007118,
+                  "score": 0.016591928899288177
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "absent",
+                  "confidence": 0.9979313197545707,
+                  "score": 0.0020686802454292774
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 0.9663451686501503,
+                  "score": 0.0336548313498497
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "absent",
+                  "confidence": 0.9810834042727947,
+                  "score": 0.018916595727205276
+                }
+              ],
+              "choice": {
+                "top_findings": [
+                  "Pulmonary fibrotic sequela",
+                  "Lung nodule"
+                ]
+              },
+              "score": {
+                "burden": 0.09759107232093811,
+                "n_positive": 2
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_114_a_2.nii.gz",
+          "max_feature_error": 0.000244140625,
+          "mean_feature_error": 0.000008033898666326422,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_114_a_2.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "present",
+                  "confidence": 0.8253012299537659,
+                  "score": 0.8253012299537659
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.9939620471559465,
+                  "score": 0.006037952844053507
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "absent",
+                  "confidence": 0.9782040100544691,
+                  "score": 0.02179598994553089
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "present",
+                  "confidence": 0.3333333432674408,
+                  "score": 0.3333333432674408
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.9997026464552619,
+                  "score": 0.0002973535447381437
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.9564044959843159,
+                  "score": 0.04359550401568413
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "present",
+                  "confidence": 0.3654855787754059,
+                  "score": 0.3654855787754059
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.9822380114346743,
+                  "score": 0.017761988565325737
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "present",
+                  "confidence": 0.5096153616905212,
+                  "score": 0.5096153616905212
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "absent",
+                  "confidence": 0.8367346972227097,
+                  "score": 0.16326530277729034
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "present",
+                  "confidence": 0.8740741014480591,
+                  "score": 0.8740741014480591
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "absent",
+                  "confidence": 0.9721559267491102,
+                  "score": 0.027844073250889778
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "present",
+                  "confidence": 0.9878787994384766,
+                  "score": 0.9878787994384766
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 0.9967018470633775,
+                  "score": 0.0032981529366225004
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "absent",
+                  "confidence": 0.9448275864124298,
+                  "score": 0.05517241358757019
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "present",
+                  "confidence": 0.7422969341278076,
+                  "score": 0.7422969341278076
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 0.9969604862853885,
+                  "score": 0.0030395137146115303
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "present",
+                  "confidence": 0.3387500047683716,
+                  "score": 0.3387500047683716
+                }
+              ],
+              "choice": {
+                "top_findings": [
+                  "Pleural effusion",
+                  "Lung opacity",
+                  "Medical material"
+                ]
+              },
+              "score": {
+                "burden": 0.2954913377761841,
+                "n_positive": 8
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_361_a_2.nii.gz",
+          "max_feature_error": 0.000244140625,
+          "mean_feature_error": 0.00001898400114441756,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_361_a_2.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "absent",
+                  "confidence": 0.9997350642515812,
+                  "score": 0.0002649357484187931
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.9942381563596427,
+                  "score": 0.005761843640357256
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "absent",
+                  "confidence": 0.9968000000808388,
+                  "score": 0.0031999999191612005
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "absent",
+                  "confidence": 0.9815171342343092,
+                  "score": 0.018482865765690804
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.9997026464552619,
+                  "score": 0.0002973535447381437
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.9923906149342656,
+                  "score": 0.0076093850657343864
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "absent",
+                  "confidence": 0.9798831921070814,
+                  "score": 0.020116807892918587
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.9830586072057486,
+                  "score": 0.016941392794251442
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "absent",
+                  "confidence": 0.9658119641244411,
+                  "score": 0.03418803587555885
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "absent",
+                  "confidence": 0.6953167915344238,
+                  "score": 0.30468320846557617
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "present",
+                  "confidence": 0.9466328024864197,
+                  "score": 0.9466328024864197
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "absent",
+                  "confidence": 0.9355860576033592,
+                  "score": 0.06441394239664078
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "absent",
+                  "confidence": 0.9982192002935335,
+                  "score": 0.001780799706466496
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 0.9943411480635405,
+                  "score": 0.005658851936459541
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "present",
+                  "confidence": 0.5530086159706116,
+                  "score": 0.5530086159706116
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 0.995873452629894,
+                  "score": 0.004126547370105982
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "absent",
+                  "confidence": 0.9756097570061684,
+                  "score": 0.024390242993831635
+                }
+              ],
+              "choice": {
+                "top_findings": [
+                  "Lung opacity",
+                  "Consolidation"
+                ]
+              },
+              "score": {
+                "burden": 0.1117531955242157,
+                "n_positive": 2
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_838_a_2.nii.gz",
+          "max_feature_error": 0.000244140625,
+          "mean_feature_error": 0.000012724194675683975,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_838_a_2.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "absent",
+                  "confidence": 0.9902173914015293,
+                  "score": 0.009782608598470688
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "present",
+                  "confidence": 0.8498134613037109,
+                  "score": 0.8498134613037109
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "present",
+                  "confidence": 0.8359479308128357,
+                  "score": 0.8359479308128357
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "present",
+                  "confidence": 0.6890459656715393,
+                  "score": 0.6890459656715393
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "present",
+                  "confidence": 0.7481752038002014,
+                  "score": 0.7481752038002014
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.886731393635273,
+                  "score": 0.11326860636472702
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "absent",
+                  "confidence": 0.8311170190572739,
+                  "score": 0.16888298094272614
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.7988782078027725,
+                  "score": 0.20112179219722748
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "present",
+                  "confidence": 0.6345919370651245,
+                  "score": 0.6345919370651245
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "present",
+                  "confidence": 0.39221689105033875,
+                  "score": 0.39221689105033875
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "absent",
+                  "confidence": 0.7101681232452393,
+                  "score": 0.28983187675476074
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "present",
+                  "confidence": 0.5092024803161621,
+                  "score": 0.5092024803161621
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "present",
+                  "confidence": 0.9624494314193726,
+                  "score": 0.9624494314193726
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "present",
+                  "confidence": 0.26724138855934143,
+                  "score": 0.26724138855934143
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "present",
+                  "confidence": 0.36399999260902405,
+                  "score": 0.36399999260902405
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "absent",
+                  "confidence": 0.9517684876918793,
+                  "score": 0.04823151230812073
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 0.8506289273500443,
+                  "score": 0.14937107264995575
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "present",
+                  "confidence": 0.37811899185180664,
+                  "score": 0.37811899185180664
+                }
+              ],
+              "choice": {
+                "top_findings": [
+                  "Pleural effusion",
+                  "Arterial wall calcification",
+                  "Cardiomegaly"
+                ]
+              },
+              "score": {
+                "burden": 0.4228496849536896,
+                "n_positive": 11
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_713_b_1.nii.gz",
+          "max_feature_error": 0.000244140625,
+          "mean_feature_error": 0.000031757790566189215,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_713_b_1.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "absent",
+                  "confidence": 0.9995502585952636,
+                  "score": 0.00044974140473641455
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.9844173444435,
+                  "score": 0.015582655556499958
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "absent",
+                  "confidence": 0.9997889404767193,
+                  "score": 0.00021105952328070998
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "absent",
+                  "confidence": 0.9822064060717821,
+                  "score": 0.017793593928217888
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.972796518355608,
+                  "score": 0.027203481644392014
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.9901408450677991,
+                  "score": 0.009859154932200909
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "absent",
+                  "confidence": 0.957075472921133,
+                  "score": 0.04292452707886696
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.9867374002933502,
+                  "score": 0.01326259970664978
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "absent",
+                  "confidence": 0.9937917860224843,
+                  "score": 0.0062082139775156975
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "absent",
+                  "confidence": 0.6953167915344238,
+                  "score": 0.30468320846557617
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "absent",
+                  "confidence": 0.9650971367955208,
+                  "score": 0.03490286320447922
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "absent",
+                  "confidence": 0.9721559267491102,
+                  "score": 0.027844073250889778
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 0.9997842968004989,
+                  "score": 0.00021570319950114936
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "absent",
+                  "confidence": 0.9961256994865835,
+                  "score": 0.0038743005134165287
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "absent",
+                  "confidence": 0.9971308340318501,
+                  "score": 0.0028691659681499004
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 0.9969604862853885,
+                  "score": 0.0030395137146115303
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "absent",
+                  "confidence": 0.9997855457913829,
+                  "score": 0.00021445420861709863
+                }
+              ],
+              "choice": {
+                "top_findings": []
+              },
+              "score": {
+                "burden": 0.028396576642990112,
+                "n_positive": 0
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_701_a_2.nii.gz",
+          "max_feature_error": 0.000244140625,
+          "mean_feature_error": 0.00002003988811338786,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_701_a_2.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "absent",
+                  "confidence": 0.8997134640812874,
+                  "score": 0.10028653591871262
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "present",
+                  "confidence": 0.8498134613037109,
+                  "score": 0.8498134613037109
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "present",
+                  "confidence": 0.5418848395347595,
+                  "score": 0.5418848395347595
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "absent",
+                  "confidence": 0.8690987080335617,
+                  "score": 0.1309012919664383
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "present",
+                  "confidence": 0.8024377822875977,
+                  "score": 0.8024377822875977
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.8646789044141769,
+                  "score": 0.13532109558582306
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "absent",
+                  "confidence": 0.9066279605031013,
+                  "score": 0.09337203949689865
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.7545219659805298,
+                  "score": 0.24547803401947021
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "present",
+                  "confidence": 0.4291498064994812,
+                  "score": 0.4291498064994812
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "absent",
+                  "confidence": 0.7062084376811981,
+                  "score": 0.2937915623188019
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "absent",
+                  "confidence": 0.9650971367955208,
+                  "score": 0.03490286320447922
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "absent",
+                  "confidence": 0.9355860576033592,
+                  "score": 0.06441394239664078
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "absent",
+                  "confidence": 0.9982192002935335,
+                  "score": 0.001780799706466496
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 0.9069529622793198,
+                  "score": 0.09304703772068024
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "absent",
+                  "confidence": 0.9887820510193706,
+                  "score": 0.011217948980629444
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "absent",
+                  "confidence": 0.9971308340318501,
+                  "score": 0.0028691659681499004
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 0.9969604862853885,
+                  "score": 0.0030395137146115303
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "absent",
+                  "confidence": 0.9982872522668913,
+                  "score": 0.0017127477331086993
+                }
+              ],
+              "choice": {
+                "top_findings": [
+                  "Arterial wall calcification",
+                  "Coronary artery wall calcification",
+                  "Cardiomegaly"
+                ]
+              },
+              "score": {
+                "burden": 0.21307891607284546,
+                "n_positive": 4
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_434_a_1.nii.gz",
+          "max_feature_error": 0.0001220703125,
+          "mean_feature_error": 0.00001438031904399395,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_434_a_1.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "absent",
+                  "confidence": 0.9997350642515812,
+                  "score": 0.0002649357484187931
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "absent",
+                  "confidence": 0.9997889404767193,
+                  "score": 0.00021105952328070998
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "absent",
+                  "confidence": 0.9953956343233585,
+                  "score": 0.004604365676641464
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.9923906149342656,
+                  "score": 0.0076093850657343864
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "absent",
+                  "confidence": 0.9319059327244759,
+                  "score": 0.06809406727552414
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.973543306812644,
+                  "score": 0.026456693187355995
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "absent",
+                  "confidence": 0.9902676399797201,
+                  "score": 0.009732360020279884
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "absent",
+                  "confidence": 0.8050847500562668,
+                  "score": 0.19491524994373322
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "absent",
+                  "confidence": 0.9723812732845545,
+                  "score": 0.02761872671544552
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "absent",
+                  "confidence": 0.9595645405352116,
+                  "score": 0.04043545946478844
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 0.9997842968004989,
+                  "score": 0.00021570319950114936
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "absent",
+                  "confidence": 0.9971308340318501,
+                  "score": 0.0028691659681499004
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 0.995873452629894,
+                  "score": 0.004126547370105982
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "absent",
+                  "confidence": 0.9993621635367163,
+                  "score": 0.0006378364632837474
+                }
+              ],
+              "choice": {
+                "top_findings": []
+              },
+              "score": {
+                "burden": 0.021543974056839943,
+                "n_positive": 0
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_627_a_2.nii.gz",
+          "max_feature_error": 0.000244140625,
+          "mean_feature_error": 0.000023887803763500415,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_627_a_2.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "absent",
+                  "confidence": 0.9974413646850735,
+                  "score": 0.002558635314926505
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.9939620471559465,
+                  "score": 0.006037952844053507
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "absent",
+                  "confidence": 0.9997889404767193,
+                  "score": 0.00021105952328070998
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "absent",
+                  "confidence": 0.9501466266810894,
+                  "score": 0.0498533733189106
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.9986126526491717,
+                  "score": 0.0013873473508283496
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.9564044959843159,
+                  "score": 0.04359550401568413
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "absent",
+                  "confidence": 0.957075472921133,
+                  "score": 0.04292452707886696
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.935765266418457,
+                  "score": 0.06423473358154297
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "present",
+                  "confidence": 0.42152467370033264,
+                  "score": 0.42152467370033264
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "present",
+                  "confidence": 0.5594251155853271,
+                  "score": 0.5594251155853271
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "absent",
+                  "confidence": 0.8963337540626526,
+                  "score": 0.10366624593734741
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "absent",
+                  "confidence": 0.7628755420446396,
+                  "score": 0.2371244579553604
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "absent",
+                  "confidence": 0.9989492119057104,
+                  "score": 0.0010507880942896008
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 0.9984770606970415,
+                  "score": 0.001522939302958548
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "absent",
+                  "confidence": 0.9887820510193706,
+                  "score": 0.011217948980629444
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "absent",
+                  "confidence": 0.9971308340318501,
+                  "score": 0.0028691659681499004
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 0.9663451686501503,
+                  "score": 0.0336548313498497
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "absent",
+                  "confidence": 0.9997855457913829,
+                  "score": 0.00021445420861709863
+                }
+              ],
+              "choice": {
+                "top_findings": [
+                  "Lung nodule",
+                  "Atelectasis"
+                ]
+              },
+              "score": {
+                "burden": 0.08794854581356049,
+                "n_positive": 2
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_529_a_2.nii.gz",
+          "max_feature_error": 0.000244140625,
+          "mean_feature_error": 0.000019938373952754773,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_529_a_2.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "absent",
+                  "confidence": 0.9997350642515812,
+                  "score": 0.0002649357484187931
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "absent",
+                  "confidence": 0.9996153846150264,
+                  "score": 0.0003846153849735856
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "absent",
+                  "confidence": 0.9897610917687416,
+                  "score": 0.010238908231258392
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.9723374824970961,
+                  "score": 0.02766251750290394
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "absent",
+                  "confidence": 0.939059779047966,
+                  "score": 0.060940220952034
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.9830586072057486,
+                  "score": 0.016941392794251442
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "absent",
+                  "confidence": 0.9783523753285408,
+                  "score": 0.021647624671459198
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "absent",
+                  "confidence": 0.7505580335855484,
+                  "score": 0.2494419664144516
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "absent",
+                  "confidence": 0.9723812732845545,
+                  "score": 0.02761872671544552
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "absent",
+                  "confidence": 0.9721559267491102,
+                  "score": 0.027844073250889778
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 0.9957264955155551,
+                  "score": 0.004273504484444857
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "absent",
+                  "confidence": 0.9982425307389349,
+                  "score": 0.0017574692610651255
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "absent",
+                  "confidence": 0.9938637325540185,
+                  "score": 0.0061362674459815025
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "absent",
+                  "confidence": 0.9993621635367163,
+                  "score": 0.0006378364632837474
+                }
+              ],
+              "choice": {
+                "top_findings": []
+              },
+              "score": {
+                "burden": 0.02532166987657547,
+                "n_positive": 0
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_303_a_2.nii.gz",
+          "max_feature_error": 0.000244140625,
+          "mean_feature_error": 0.00002181475610996131,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_303_a_2.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "absent",
+                  "confidence": 0.9997350642515812,
+                  "score": 0.0002649357484187931
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.9993968636845239,
+                  "score": 0.0006031363154761493
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "absent",
+                  "confidence": 0.9974587040487677,
+                  "score": 0.002541295951232314
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "absent",
+                  "confidence": 0.9576333090662956,
+                  "score": 0.042366690933704376
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.9948750799521804,
+                  "score": 0.005124920047819614
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "absent",
+                  "confidence": 0.9686252139508724,
+                  "score": 0.03137478604912758
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.9830586072057486,
+                  "score": 0.016941392794251442
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "absent",
+                  "confidence": 0.9658119641244411,
+                  "score": 0.03418803587555885
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "present",
+                  "confidence": 0.4482758641242981,
+                  "score": 0.4482758641242981
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "present",
+                  "confidence": 0.5361494421958923,
+                  "score": 0.5361494421958923
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "absent",
+                  "confidence": 0.9595645405352116,
+                  "score": 0.04043545946478844
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 0.9876888636499643,
+                  "score": 0.012311136350035667
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "absent",
+                  "confidence": 0.977569330483675,
+                  "score": 0.022430669516324997
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "present",
+                  "confidence": 0.561904788017273,
+                  "score": 0.561904788017273
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "absent",
+                  "confidence": 0.9848714070394635,
+                  "score": 0.01512859296053648
+                }
+              ],
+              "choice": {
+                "top_findings": [
+                  "Consolidation",
+                  "Lung opacity",
+                  "Lung nodule"
+                ]
+              },
+              "score": {
+                "burden": 0.0983356162905693,
+                "n_positive": 3
+              }
+            }
+          ]
+        },
+        {
+          "volume": "valid_997_a_2.nii.gz",
+          "max_feature_error": 0.000244140625,
+          "mean_feature_error": 0.000014520638615067583,
+          "decision_disagreements": 0,
+          "records": [
+            {
+              "volume": "valid_997_a_2.nii.gz",
+              "schema_version": "rev-1.0",
+              "decisions": [
+                {
+                  "finding": "Medical material",
+                  "decision": "absent",
+                  "confidence": 0.9379084967076778,
+                  "score": 0.06209150329232216
+                },
+                {
+                  "finding": "Arterial wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.9844173444435,
+                  "score": 0.015582655556499958
+                },
+                {
+                  "finding": "Cardiomegaly",
+                  "decision": "absent",
+                  "confidence": 0.9782040100544691,
+                  "score": 0.02179598994553089
+                },
+                {
+                  "finding": "Pericardial effusion",
+                  "decision": "absent",
+                  "confidence": 0.9368231073021889,
+                  "score": 0.06317689269781113
+                },
+                {
+                  "finding": "Coronary artery wall calcification",
+                  "decision": "absent",
+                  "confidence": 0.994987468700856,
+                  "score": 0.00501253129914403
+                },
+                {
+                  "finding": "Hiatal hernia",
+                  "decision": "absent",
+                  "confidence": 0.9614726044237614,
+                  "score": 0.03852739557623863
+                },
+                {
+                  "finding": "Lymphadenopathy",
+                  "decision": "absent",
+                  "confidence": 0.939059779047966,
+                  "score": 0.060940220952034
+                },
+                {
+                  "finding": "Emphysema",
+                  "decision": "absent",
+                  "confidence": 0.7988782078027725,
+                  "score": 0.20112179219722748
+                },
+                {
+                  "finding": "Atelectasis",
+                  "decision": "present",
+                  "confidence": 0.47322720289230347,
+                  "score": 0.47322720289230347
+                },
+                {
+                  "finding": "Lung nodule",
+                  "decision": "present",
+                  "confidence": 0.4207603633403778,
+                  "score": 0.4207603633403778
+                },
+                {
+                  "finding": "Lung opacity",
+                  "decision": "absent",
+                  "confidence": 0.8250904679298401,
+                  "score": 0.1749095320701599
+                },
+                {
+                  "finding": "Pulmonary fibrotic sequela",
+                  "decision": "present",
+                  "confidence": 0.3553113639354706,
+                  "score": 0.3553113639354706
+                },
+                {
+                  "finding": "Pleural effusion",
+                  "decision": "absent",
+                  "confidence": 1,
+                  "score": 0
+                },
+                {
+                  "finding": "Mosaic attenuation pattern",
+                  "decision": "absent",
+                  "confidence": 0.8562341034412384,
+                  "score": 0.1437658965587616
+                },
+                {
+                  "finding": "Peribronchial thickening",
+                  "decision": "absent",
+                  "confidence": 0.9961256994865835,
+                  "score": 0.0038743005134165287
+                },
+                {
+                  "finding": "Consolidation",
+                  "decision": "absent",
+                  "confidence": 0.9900000002235174,
+                  "score": 0.009999999776482582
+                },
+                {
+                  "finding": "Bronchiectasis",
+                  "decision": "absent",
+                  "confidence": 0.9969604862853885,
+                  "score": 0.0030395137146115303
+                },
+                {
+                  "finding": "Interlobular septal thickening",
+                  "decision": "absent",
+                  "confidence": 0.9982872522668913,
+                  "score": 0.0017127477331086993
+                }
+              ],
+              "choice": {
+                "top_findings": [
+                  "Atelectasis",
+                  "Lung nodule",
+                  "Pulmonary fibrotic sequela"
+                ]
+              },
+              "score": {
+                "burden": 0.11415833979845047,
+                "n_positive": 3
+              }
+            }
+          ]
+        }
+      ],
+      "head_microbenchmark": {
+        "reference": {
+          "batch_size": 16,
+          "p50_batch_s": 0.0006953885313123465
+        },
+        "fused": {
+          "batch_size": 16,
+          "p50_batch_s": 0.0006765885045751929
+        }
+      },
+      "parallel_preprocessing": {
+        "workers": 4,
+        "batch_size": 1,
+        "includes_worker_startup": true,
+        "wall_s": 41.43755518802209,
+        "volumes_per_second": 0.38612316598796226,
+        "decision_disagreements": 0,
+        "max_score_error": 0
+      },
+      "compile": {
+        "error": "AssertionError: Guard check failed: 7/0: tensor '___from_numpy(self.drop_prob)' dispatch key set mismatch. expected DispatchKeySet(CPU, BackendSelect, ADInplaceOrView), actual DispatchKeySet(CPU, BackendSelect)\n"
+      }
+    },
+    "colipri_zero_shot": {
+      "load_and_text_cache_s": 10.77318496996304,
+      "first_image_inference_s": 7.609319728042465,
+      "prompts": [
+        "No medical material.",
+        "Medical material is present.",
+        "No arterial wall calcification.",
+        "Arterial wall calcification is present.",
+        "No cardiomegaly.",
+        "Cardiomegaly is present.",
+        "No pericardial effusion.",
+        "Pericardial effusion is present.",
+        "No coronary artery wall calcification.",
+        "Coronary artery wall calcification is present.",
+        "No hiatal hernia.",
+        "Hiatal hernia is present.",
+        "No lymphadenopathy.",
+        "Lymphadenopathy is present.",
+        "No emphysema.",
+        "Emphysema is present.",
+        "No atelectasis.",
+        "Atelectasis is present.",
+        "No lung nodule.",
+        "Lung nodule is present.",
+        "No lung opacity.",
+        "Lung opacity is present.",
+        "No pulmonary fibrotic sequela.",
+        "Pulmonary fibrotic sequela is present.",
+        "No pleural effusion.",
+        "Pleural effusion is present.",
+        "No mosaic attenuation pattern.",
+        "Mosaic attenuation pattern is present.",
+        "No peribronchial thickening.",
+        "Peribronchial thickening is present.",
+        "No consolidation.",
+        "Consolidation is present.",
+        "No bronchiectasis.",
+        "Bronchiectasis is present.",
+        "No interlobular septal thickening.",
+        "Interlobular septal thickening is present."
+      ],
+      "protocol": "18 independent negative/positive prompt pairs; 0.5 threshold; upstream temperature",
+      "peak_vram_gib": 1.0202150344848633,
+      "summary": {
+        "n": 16,
+        "mean_s": 6.837560219937586,
+        "p50_s": 6.4701913480239455,
+        "p95_s": 12.373149105493212,
+        "volumes_per_second": 0.1462509971150394
+      },
+      "samples": [
+        {
+          "volume": "valid_675_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 7.172440255002584,
+          "h2d_s": 0.006703548016957939,
+          "encoder_classify_s": 0.1376343349693343,
+          "postprocess_s": 0.0003703960101120174,
+          "total_s": 7.317148533998989,
+          "scores": [
+            0.78125,
+            0.98828125,
+            1,
+            0.99609375,
+            0.96484375,
+            0.61328125,
+            0.04150390625,
+            0.9921875,
+            1,
+            0.98828125,
+            1,
+            1,
+            0.7890625,
+            1,
+            0.98828125,
+            1,
+            0.984375,
+            1
+          ]
+        },
+        {
+          "volume": "valid_740_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 11.923437085992191,
+          "h2d_s": 0.007026926032267511,
+          "encoder_classify_s": 0.14075203199172392,
+          "postprocess_s": 0.00016627396689727902,
+          "total_s": 12.07138231798308,
+          "scores": [
+            0.0947265625,
+            0.99609375,
+            0.96484375,
+            0.400390625,
+            0.66796875,
+            0.8828125,
+            0.03955078125,
+            1,
+            0.98828125,
+            0.98828125,
+            0.96484375,
+            1,
+            0.0120849609375,
+            0.9765625,
+            0.99609375,
+            0.1923828125,
+            1,
+            0.91796875
+          ]
+        },
+        {
+          "volume": "valid_458_a_1.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 2.894065722997766,
+          "h2d_s": 0.006771748012397438,
+          "encoder_classify_s": 0.1407925559906289,
+          "postprocess_s": 0.00015540502499789,
+          "total_s": 3.04178543202579,
+          "scores": [
+            0.017333984375,
+            0.018310546875,
+            0.0284423828125,
+            0.0250244140625,
+            0.0037078857421875,
+            0.61328125,
+            0.0008697509765625,
+            0.263671875,
+            0.061279296875,
+            0.1494140625,
+            0.65234375,
+            0.61328125,
+            0.044921875,
+            0.10986328125,
+            0.1767578125,
+            0.984375,
+            0.57421875,
+            0.796875
+          ]
+        },
+        {
+          "volume": "valid_901_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 6.767529060016386,
+          "h2d_s": 0.006809946964494884,
+          "encoder_classify_s": 0.1413794060354121,
+          "postprocess_s": 0.0001591990003362298,
+          "total_s": 6.915877612016629,
+          "scores": [
+            0.00115203857421875,
+            0.0020599365234375,
+            0.00165557861328125,
+            0.00433349609375,
+            0.00009012222290039062,
+            0.0225830078125,
+            0.000020503997802734375,
+            0.93359375,
+            0.015869140625,
+            0.236328125,
+            0.01019287109375,
+            0.20703125,
+            0.0017852783203125,
+            0.004974365234375,
+            0.388671875,
+            0.00091552734375,
+            0.671875,
+            0.0206298828125
+          ]
+        },
+        {
+          "volume": "valid_851_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 4.6926638560253195,
+          "h2d_s": 0.006457118026446551,
+          "encoder_classify_s": 0.14041383296716958,
+          "postprocess_s": 0.00012390001211315393,
+          "total_s": 4.839658707031049,
+          "scores": [
+            0.00543212890625,
+            0.01361083984375,
+            0.001190185546875,
+            0.0034637451171875,
+            0.00020313262939453125,
+            0.00927734375,
+            0.00007009506225585938,
+            0.9765625,
+            0.02734375,
+            0.9296875,
+            0.0184326171875,
+            0.671875,
+            0.004486083984375,
+            0.0123291015625,
+            0.765625,
+            0.00075531005859375,
+            0.94921875,
+            0.021728515625
+          ]
+        },
+        {
+          "volume": "valid_74_a_1.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 12.340638206980657,
+          "h2d_s": 0.006760968011803925,
+          "encoder_classify_s": 0.14073730900418013,
+          "postprocess_s": 0.00015735399210825562,
+          "total_s": 12.48829383798875,
+          "scores": [
+            0.0673828125,
+            0.0211181640625,
+            0.0017547607421875,
+            0.003936767578125,
+            0.00018787384033203125,
+            0.0289306640625,
+            0.00004124641418457031,
+            0.99609375,
+            0.12109375,
+            0.7265625,
+            0.4765625,
+            0.9765625,
+            0.005645751953125,
+            0.2216796875,
+            0.8671875,
+            0.001068115234375,
+            0.96484375,
+            0.63671875
+          ]
+        },
+        {
+          "volume": "valid_114_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 2.3268422430264764,
+          "h2d_s": 0.00633638899307698,
+          "encoder_classify_s": 0.14236739400075749,
+          "postprocess_s": 0.00015671795699745417,
+          "total_s": 2.4757027439773083,
+          "scores": [
+            0.201171875,
+            0.0037994384765625,
+            0.0194091796875,
+            0.93359375,
+            0.00823974609375,
+            0.032470703125,
+            0.4609375,
+            0.82421875,
+            0.9296875,
+            0.9375,
+            0.98828125,
+            0.6484375,
+            0.99609375,
+            0.9765625,
+            0.93359375,
+            0.9765625,
+            0.76171875,
+            0.96875
+          ]
+        },
+        {
+          "volume": "valid_361_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 6.068007206020411,
+          "h2d_s": 0.011018778022844344,
+          "encoder_classify_s": 0.14075862796744332,
+          "postprocess_s": 0.0001702000154182315,
+          "total_s": 6.219954812026117,
+          "scores": [
+            0.0198974609375,
+            0.00408935546875,
+            0.0126953125,
+            0.166015625,
+            0.0023345947265625,
+            0.0419921875,
+            0.0001811981201171875,
+            0.416015625,
+            0.23828125,
+            0.99609375,
+            0.87890625,
+            0.76171875,
+            0.12255859375,
+            0.84765625,
+            0.52734375,
+            0.375,
+            0.3125,
+            0.90234375
+          ]
+        },
+        {
+          "volume": "valid_838_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 4.3208499099710025,
+          "h2d_s": 0.006749807042069733,
+          "encoder_classify_s": 0.13754435896407813,
+          "postprocess_s": 0.0001547610154375434,
+          "total_s": 4.465298836992588,
+          "scores": [
+            0.04638671875,
+            0.9921875,
+            1,
+            0.99609375,
+            0.412109375,
+            0.96875,
+            0.43359375,
+            0.99609375,
+            1,
+            0.9453125,
+            1,
+            1,
+            1,
+            0.9921875,
+            0.99609375,
+            0.98046875,
+            0.9921875,
+            1
+          ]
+        },
+        {
+          "volume": "valid_713_b_1.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 12.19040237099398,
+          "h2d_s": 0.006630018004216254,
+          "encoder_classify_s": 0.1376048990059644,
+          "postprocess_s": 0.0001302399905398488,
+          "total_s": 12.3347675279947,
+          "scores": [
+            0.0002155303955078125,
+            0.00095367431640625,
+            0.000431060791015625,
+            0.01324462890625,
+            0.00145721435546875,
+            0.0267333984375,
+            0.001190185546875,
+            0.005584716796875,
+            0.0006561279296875,
+            0.484375,
+            0.000102996826171875,
+            0.00006723403930664062,
+            0.000438690185546875,
+            0.004608154296875,
+            0.068359375,
+            0.00054931640625,
+            0.004364013671875,
+            0.00009870529174804688
+          ]
+        },
+        {
+          "volume": "valid_701_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 3.6593883720343,
+          "h2d_s": 0.006178085983265191,
+          "encoder_classify_s": 0.13692925503710285,
+          "postprocess_s": 0.00012068694923073053,
+          "total_s": 3.802616400003899,
+          "scores": [
+            0.03369140625,
+            0.98828125,
+            0.83203125,
+            0.048095703125,
+            0.9921875,
+            0.0751953125,
+            0.02099609375,
+            0.7109375,
+            0.57421875,
+            0.578125,
+            0.41015625,
+            0.3515625,
+            0.007110595703125,
+            0.91796875,
+            0.6015625,
+            0.00537109375,
+            0.2578125,
+            0.1533203125
+          ]
+        },
+        {
+          "volume": "valid_434_a_1.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 7.053243089001626,
+          "h2d_s": 0.006902889988850802,
+          "encoder_classify_s": 0.1411593270022422,
+          "postprocess_s": 0.00015720498049631715,
+          "total_s": 7.201462510973215,
+          "scores": [
+            0.0002231597900390625,
+            0.000179290771484375,
+            0.00167083740234375,
+            0.019775390625,
+            0.00007534027099609375,
+            0.0361328125,
+            0.0004215240478515625,
+            0.28125,
+            0.0015411376953125,
+            0.5,
+            0.000385284423828125,
+            0.00168609619140625,
+            0.0003662109375,
+            0.0023651123046875,
+            0.2451171875,
+            0.000667572021484375,
+            0.10107421875,
+            0.00121307373046875
+          ]
+        },
+        {
+          "volume": "valid_627_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 4.72076937998645,
+          "h2d_s": 0.007218050013761967,
+          "encoder_classify_s": 0.14133248996222392,
+          "postprocess_s": 0.00015720503870397806,
+          "total_s": 4.86947712500114,
+          "scores": [
+            0.0008544921875,
+            0.00011396408081054688,
+            0.00007390975952148438,
+            0.019775390625,
+            0.000202178955078125,
+            0.01177978515625,
+            0.00015163421630859375,
+            0.04638671875,
+            0.056640625,
+            0.9296875,
+            0.003875732421875,
+            0.01251220703125,
+            0.004608154296875,
+            0.0031280517578125,
+            0.4296875,
+            0.00017261505126953125,
+            0.28125,
+            0.00006914138793945312
+          ]
+        },
+        {
+          "volume": "valid_529_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 11.056553873000666,
+          "h2d_s": 0.007176298997364938,
+          "encoder_classify_s": 0.14126379101071507,
+          "postprocess_s": 0.0001749279908835888,
+          "total_s": 11.20516889099963,
+          "scores": [
+            0.00360107421875,
+            0.0002593994140625,
+            0.004119873046875,
+            0.029296875,
+            0.00004267692565917969,
+            0.0093994140625,
+            0.00081634521484375,
+            0.015869140625,
+            0.0203857421875,
+            0.140625,
+            0.010498046875,
+            0.00170135498046875,
+            0.0015716552734375,
+            0.0263671875,
+            0.197265625,
+            0.0042724609375,
+            0.01324462890625,
+            0.005218505859375
+          ]
+        },
+        {
+          "volume": "valid_303_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 3.2848158669658005,
+          "h2d_s": 0.006728040985763073,
+          "encoder_classify_s": 0.14026504202047363,
+          "postprocess_s": 0.00013139599468559027,
+          "total_s": 3.431940345966723,
+          "scores": [
+            0.0042724609375,
+            0.00099945068359375,
+            0.01068115234375,
+            0.07763671875,
+            0.00009632110595703125,
+            0.0224609375,
+            0.0026702880859375,
+            0.142578125,
+            0.01092529296875,
+            0.99609375,
+            0.06982421875,
+            0.07763671875,
+            0.00102996826171875,
+            0.5,
+            0.80859375,
+            0.1708984375,
+            0.7109375,
+            0.0172119140625
+          ]
+        },
+        {
+          "volume": "valid_997_a_2.nii.gz",
+          "repeat": 0,
+          "preprocess_s": 6.576469706022181,
+          "h2d_s": 0.006585860974155366,
+          "encoder_classify_s": 0.13726960303029045,
+          "postprocess_s": 0.00010271399514749646,
+          "total_s": 6.720427884021774,
+          "scores": [
+            0.400390625,
+            0.08642578125,
+            0.06640625,
+            0.197265625,
+            0.00848388671875,
+            0.2431640625,
+            0.00194549560546875,
+            0.93359375,
+            0.91796875,
+            0.9296875,
+            0.86328125,
+            0.90234375,
+            0.03955078125,
+            0.9609375,
+            0.7578125,
+            0.007568359375,
+            0.74609375,
+            0.259765625
+          ]
+        }
+      ]
+    },
+    "nv_reason_ct": {
+      "load_s": 134.88426191202598,
+      "first_protocol_inference_s": {
+        "binary": 52.18890641699545,
+        "single_list": 8.961191034002695
+      },
+      "revision": "386b93e034983f6c1fc841a43833a1b6a0cd9c13",
+      "attn_implementation": "sdpa",
+      "dtype": "bfloat16",
+      "thinking": false,
+      "preprocessing": "one official chest crop per volume, reused for 18 prompts; no vision/LLM prefill caching",
+      "binary_prompts": [
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is medical material present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is arterial wall calcification present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is cardiomegaly present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is pericardial effusion present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is coronary artery wall calcification present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is hiatal hernia present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is lymphadenopathy present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is emphysema present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is atelectasis present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is lung nodule present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is lung opacity present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is pulmonary fibrotic sequela present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is pleural effusion present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is mosaic attenuation pattern present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is peribronchial thickening present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is consolidation present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is bronchiectasis present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+        "<|im_start|>user\n<|vision_start|><|image_pad|><|vision_end|>Is interlobular septal thickening present in this CT? Answer only Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+      ],
+      "single_list_prompt": "Identify the abnormalities present in this chest CT. Choose only from this list: Medical material, Arterial wall calcification, Cardiomegaly, Pericardial effusion, Coronary artery wall calcification, Hiatal hernia, Lymphadenopathy, Emphysema, Atelectasis, Lung nodule, Lung opacity, Pulmonary fibrotic sequela, Pleural effusion, Mosaic attenuation pattern, Peribronchial thickening, Consolidation, Bronchiectasis, Interlobular septal thickening. Return a JSON object mapping every listed abnormality to true or false.",
+      "peak_vram_gib": 11.207752704620361,
+      "protocols": {
+        "per_label": {
+          "max_new_tokens": 8,
+          "summary": {
+            "n": 16,
+            "mean_s": 21.885777716623124,
+            "p50_s": 21.31850566295907,
+            "p95_s": 25.596485143265454,
+            "volumes_per_second": 0.045691773577708414
+          },
+          "samples": [
+            {
+              "volume": "valid_675_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 4.8607619650429115,
+              "tokenise_s": 0.62394207296893,
+              "h2d_s": 0.12335236300714314,
+              "generate_s": 15.92829775804421,
+              "total_s": 21.53939109906787,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Yes",
+                "Yes",
+                "Yes",
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "Yes",
+                "No",
+                "No",
+                "Yes",
+                "Yes",
+                "No",
+                "No"
+              ]
+            },
+            {
+              "volume": "valid_740_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 8.220936621015426,
+              "tokenise_s": 0.6099600070738234,
+              "h2d_s": 0.11471880902536213,
+              "generate_s": 15.91649263096042,
+              "total_s": 24.86461267899722,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "Yes",
+                "Yes",
+                "Yes",
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No"
+              ]
+            },
+            {
+              "volume": "valid_458_a_1.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 2.9430470520164818,
+              "tokenise_s": 0.638791082019452,
+              "h2d_s": 0.11462231894256547,
+              "generate_s": 15.918585755105596,
+              "total_s": 19.617680470983032,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "Yes"
+              ]
+            },
+            {
+              "volume": "valid_901_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 4.827107424032874,
+              "tokenise_s": 0.6526586900581606,
+              "h2d_s": 0.11503342184005305,
+              "generate_s": 15.923714592121542,
+              "total_s": 21.521073489042465,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No"
+              ]
+            },
+            {
+              "volume": "valid_851_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 4.313277280016337,
+              "tokenise_s": 0.6627244938863441,
+              "h2d_s": 0.11549699504394084,
+              "generate_s": 15.935646416095551,
+              "total_s": 21.029795592010487,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No"
+              ]
+            },
+            {
+              "volume": "valid_74_a_1.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 8.862485687015578,
+              "tokenise_s": 0.6267134790541604,
+              "h2d_s": 0.11474982585059479,
+              "generate_s": 15.909380852128379,
+              "total_s": 25.515902606013697,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No"
+              ]
+            },
+            {
+              "volume": "valid_114_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 2.4172069170163013,
+              "tokenise_s": 0.6297324909828603,
+              "h2d_s": 0.1187584730796516,
+              "generate_s": 15.898932935961057,
+              "total_s": 19.067248328006826,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "Yes",
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "Yes"
+              ]
+            },
+            {
+              "volume": "valid_361_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 4.478295927983709,
+              "tokenise_s": 0.6762936630984768,
+              "h2d_s": 0.11441241804277524,
+              "generate_s": 15.94982976699248,
+              "total_s": 21.22147947794292,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "No"
+              ]
+            },
+            {
+              "volume": "valid_838_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 4.139214465976693,
+              "tokenise_s": 0.6403351619956084,
+              "h2d_s": 0.11439225595677271,
+              "generate_s": 15.904074614983983,
+              "total_s": 20.8005453950027,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "No",
+                "Yes",
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "Yes",
+                "Yes",
+                "Yes",
+                "No",
+                "Yes",
+                "Yes"
+              ]
+            },
+            {
+              "volume": "valid_713_b_1.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 8.562568699009717,
+              "tokenise_s": 0.7109536159550771,
+              "h2d_s": 0.11607050494058058,
+              "generate_s": 16.44592062907759,
+              "total_s": 25.838232755020726,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No"
+              ]
+            },
+            {
+              "volume": "valid_701_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 3.5379614969715476,
+              "tokenise_s": 0.6885131020681001,
+              "h2d_s": 0.1157627648790367,
+              "generate_s": 15.878034048015252,
+              "total_s": 20.222853630955797,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "No"
+              ]
+            },
+            {
+              "volume": "valid_434_a_1.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 5.192437251040246,
+              "tokenise_s": 0.6945090389926918,
+              "h2d_s": 0.1154684210778214,
+              "generate_s": 15.924166759941727,
+              "total_s": 21.929219340032432,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No"
+              ]
+            },
+            {
+              "volume": "valid_627_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 4.239538683963474,
+              "tokenise_s": 0.716405353974551,
+              "h2d_s": 0.12481061992002651,
+              "generate_s": 15.94641894014785,
+              "total_s": 21.02989121596329,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No"
+              ]
+            },
+            {
+              "volume": "valid_529_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 7.869844701956026,
+              "tokenise_s": 0.736190800962504,
+              "h2d_s": 0.11699620605213568,
+              "generate_s": 15.917819935944863,
+              "total_s": 24.64358650497161,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No"
+              ]
+            },
+            {
+              "volume": "valid_303_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 3.1069649269920774,
+              "tokenise_s": 0.7523533218773082,
+              "h2d_s": 0.11529917398001999,
+              "generate_s": 15.938110659015365,
+              "total_s": 19.915399033983704,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "No"
+              ]
+            },
+            {
+              "volume": "valid_997_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 4.639156732999254,
+              "tokenise_s": 0.720407256972976,
+              "h2d_s": 0.1195346299209632,
+              "generate_s": 15.933668756100815,
+              "total_s": 21.415531847975217,
+              "n_prefills": 18,
+              "generated_tokens": 36,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "Yes",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No",
+                "No"
+              ]
+            }
+          ]
+        },
+        "single_list": {
+          "max_new_tokens": 512,
+          "summary": {
+            "n": 16,
+            "mean_s": 6.973826026809547,
+            "p50_s": 6.138390269014053,
+            "p95_s": 10.32186397552141,
+            "volumes_per_second": 0.14339331038022604
+          },
+          "samples": [
+            {
+              "volume": "valid_675_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 4.8607619650429115,
+              "tokenise_s": 0.034559699008241296,
+              "h2d_s": 0.0063274509739130735,
+              "generate_s": 3.8632262980099767,
+              "total_s": 8.76518849201966,
+              "n_prefills": 1,
+              "generated_tokens": 57,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Medical material, Arterial wall calcification, Cardiomegaly, Coronary artery wall calcification, Lung opacity, Pulmonary fibrotic sequela, Peribronchial thickening, Consolidation, Thoracic vascular abnormality, Postoperative or treatment-related change"
+              ]
+            },
+            {
+              "volume": "valid_740_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 8.220936621015426,
+              "tokenise_s": 0.03376644098898396,
+              "h2d_s": 0.0062969179707579315,
+              "generate_s": 2.4402480990393087,
+              "total_s": 10.70151949103456,
+              "n_prefills": 1,
+              "generated_tokens": 30,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Arterial wall calcification, Atelectasis, Lung nodule, Pulmonary fibrotic sequela, Thoracic vascular abnormality"
+              ]
+            },
+            {
+              "volume": "valid_458_a_1.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 2.9430470520164818,
+              "tokenise_s": 0.034952585003338754,
+              "h2d_s": 0.006364361965097487,
+              "generate_s": 1.1578853080281988,
+              "total_s": 4.142398989992216,
+              "n_prefills": 1,
+              "generated_tokens": 7,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Lung opacity, Consolidation"
+              ]
+            },
+            {
+              "volume": "valid_901_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 4.827107424032874,
+              "tokenise_s": 0.0373249999829568,
+              "h2d_s": 0.006225820980034769,
+              "generate_s": 1.5065015699947253,
+              "total_s": 6.377328745031264,
+              "n_prefills": 1,
+              "generated_tokens": 13,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No suspicious nodule, mass, or infiltration in both lungs"
+              ]
+            },
+            {
+              "volume": "valid_851_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 4.313277280016337,
+              "tokenise_s": 0.039404426992405206,
+              "h2d_s": 0.006406011001672596,
+              "generate_s": 1.7919829090242274,
+              "total_s": 6.151222950022202,
+              "n_prefills": 1,
+              "generated_tokens": 18,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Lung nodule, Pulmonary fibrotic sequela, Pleural thickening"
+              ]
+            },
+            {
+              "volume": "valid_74_a_1.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 8.862485687015578,
+              "tokenise_s": 0.03512262599542737,
+              "h2d_s": 0.006378276972100139,
+              "generate_s": 1.2911653330083936,
+              "total_s": 10.195312137017027,
+              "n_prefills": 1,
+              "generated_tokens": 9,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Pulmonary fibrotic sequela"
+              ]
+            },
+            {
+              "volume": "valid_114_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 2.4172069170163013,
+              "tokenise_s": 0.03544690296985209,
+              "h2d_s": 0.006417617027182132,
+              "generate_s": 2.36107402498601,
+              "total_s": 4.820391804969404,
+              "n_prefills": 1,
+              "generated_tokens": 29,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Medical material, Lung opacity, Pleural effusion, Consolidation, Interlobular septal thickening, Postoperative or treatment-related change"
+              ]
+            },
+            {
+              "volume": "valid_361_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 4.478295927983709,
+              "tokenise_s": 0.044170629989821464,
+              "h2d_s": 0.006307323055807501,
+              "generate_s": 1.2344627080019563,
+              "total_s": 5.763388906954788,
+              "n_prefills": 1,
+              "generated_tokens": 8,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Lung nodule, Lung opacity"
+              ]
+            },
+            {
+              "volume": "valid_838_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 4.139214465976693,
+              "tokenise_s": 0.03540083096595481,
+              "h2d_s": 0.006311371049378067,
+              "generate_s": 4.508383103995584,
+              "total_s": 8.69043364096433,
+              "n_prefills": 1,
+              "generated_tokens": 65,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Arterial wall calcification, Cardiomegaly, Pericardial effusion, Coronary artery wall calcification, Lymphadenopathy, Lung opacity, Pulmonary fibrotic sequela, Pleural effusion, Bronchiectasis, Interlobular septal thickening, Thoracic aorta"
+              ]
+            },
+            {
+              "volume": "valid_713_b_1.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 8.562568699009717,
+              "tokenise_s": 0.04098811303265393,
+              "h2d_s": 0.006599248968996108,
+              "generate_s": 1.0530110460240394,
+              "total_s": 9.663323236978613,
+              "n_prefills": 1,
+              "generated_tokens": 5,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Lung nodule"
+              ]
+            },
+            {
+              "volume": "valid_701_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 3.5379614969715476,
+              "tokenise_s": 0.03848026500781998,
+              "h2d_s": 0.006459148018620908,
+              "generate_s": 2.3451131120091304,
+              "total_s": 5.9281852029962465,
+              "n_prefills": 1,
+              "generated_tokens": 29,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Arterial wall calcification, Coronary artery wall calcification, Lymphadenopathy, Lung nodule, Thoracic vascular abnormality"
+              ]
+            },
+            {
+              "volume": "valid_434_a_1.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 5.192437251040246,
+              "tokenise_s": 0.03847142297308892,
+              "h2d_s": 0.006405799009371549,
+              "generate_s": 0.888099420000799,
+              "total_s": 6.125557588005904,
+              "n_prefills": 1,
+              "generated_tokens": 2,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No"
+              ]
+            },
+            {
+              "volume": "valid_627_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 4.239538683963474,
+              "tokenise_s": 0.03904377605067566,
+              "h2d_s": 0.00642417196650058,
+              "generate_s": 1.2782833800301887,
+              "total_s": 5.56345048698131,
+              "n_prefills": 1,
+              "generated_tokens": 9,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Emphysema, Lung nodule"
+              ]
+            },
+            {
+              "volume": "valid_529_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 7.869844701956026,
+              "tokenise_s": 0.03933657001471147,
+              "h2d_s": 0.006447504973039031,
+              "generate_s": 0.8874112510238774,
+              "total_s": 8.803187549929135,
+              "n_prefills": 1,
+              "generated_tokens": 2,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "No"
+              ]
+            },
+            {
+              "volume": "valid_303_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 3.1069649269920774,
+              "tokenise_s": 0.039466399990487844,
+              "h2d_s": 0.0063885460258461535,
+              "generate_s": 0.9945892869727686,
+              "total_s": 4.147563780017663,
+              "n_prefills": 1,
+              "generated_tokens": 4,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Consolidation"
+              ]
+            },
+            {
+              "volume": "valid_997_a_2.nii.gz",
+              "repeat": 0,
+              "preprocess_s": 4.639156732999254,
+              "tokenise_s": 0.040445240039844066,
+              "h2d_s": 0.006371102994307876,
+              "generate_s": 1.0566274150041863,
+              "total_s": 5.742763426038437,
+              "n_prefills": 1,
+              "generated_tokens": 5,
+              "budget_exhaustions": 0,
+              "outputs": [
+                "Atelectasis"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "cohort": [
+    {
+      "name": "valid_675_a_2.nii.gz",
+      "stratum": "matrix_512",
+      "matrix": 512,
+      "z_spacing_mm": 0.75
+    },
+    {
+      "name": "valid_740_a_2.nii.gz",
+      "stratum": "matrix_1024",
+      "matrix": 1024,
+      "z_spacing_mm": 1.5
+    },
+    {
+      "name": "valid_458_a_1.nii.gz",
+      "stratum": "small_fov",
+      "matrix": 512,
+      "z_spacing_mm": 1
+    },
+    {
+      "name": "valid_901_a_2.nii.gz",
+      "stratum": "thick_slice",
+      "matrix": 1024,
+      "z_spacing_mm": 3
+    },
+    {
+      "name": "valid_851_a_2.nii.gz",
+      "stratum": "matrix_512",
+      "matrix": 512,
+      "z_spacing_mm": 0.75
+    },
+    {
+      "name": "valid_74_a_1.nii.gz",
+      "stratum": "matrix_1024",
+      "matrix": 1024,
+      "z_spacing_mm": 1.5
+    },
+    {
+      "name": "valid_114_a_2.nii.gz",
+      "stratum": "small_fov",
+      "matrix": 512,
+      "z_spacing_mm": 1.25
+    },
+    {
+      "name": "valid_361_a_2.nii.gz",
+      "stratum": "thick_slice",
+      "matrix": 1024,
+      "z_spacing_mm": 3
+    },
+    {
+      "name": "valid_838_a_2.nii.gz",
+      "stratum": "matrix_512",
+      "matrix": 512,
+      "z_spacing_mm": 0.75
+    },
+    {
+      "name": "valid_713_b_1.nii.gz",
+      "stratum": "matrix_1024",
+      "matrix": 1024,
+      "z_spacing_mm": 1.5
+    },
+    {
+      "name": "valid_701_a_2.nii.gz",
+      "stratum": "small_fov",
+      "matrix": 512,
+      "z_spacing_mm": 0.75
+    },
+    {
+      "name": "valid_434_a_1.nii.gz",
+      "stratum": "thick_slice",
+      "matrix": 1024,
+      "z_spacing_mm": 3
+    },
+    {
+      "name": "valid_627_a_2.nii.gz",
+      "stratum": "matrix_512",
+      "matrix": 512,
+      "z_spacing_mm": 0.75
+    },
+    {
+      "name": "valid_529_a_2.nii.gz",
+      "stratum": "matrix_1024",
+      "matrix": 1024,
+      "z_spacing_mm": 1.5
+    },
+    {
+      "name": "valid_303_a_2.nii.gz",
+      "stratum": "small_fov",
+      "matrix": 512,
+      "z_spacing_mm": 1
+    },
+    {
+      "name": "valid_997_a_2.nii.gz",
+      "stratum": "thick_slice",
+      "matrix": 1024,
+      "z_spacing_mm": 3
+    }
+  ],
+  "data_revision": "deeca4d89e9f978d4d1bccd88a55071ddbb146bb",
+  "feature_parity": {
+    "n": 3039,
+    "n_unique": 3039,
+    "feature_revision": "8c002ae7cc0eca9e89a9f4a901af587f5e2fa2c6",
+    "modes": {
+      "reference": {
+        "decision_disagreements": 0,
+        "max_probability_error": 0,
+        "max_score_error": 5.960464477539063e-8,
+        "metrics": {
+          "full_3039": {
+            "n": 3039,
+            "macro_f1": 0.6113060989765615,
+            "macro_auroc": 0.8655061830400919
+          },
+          "corrected_3002": {
+            "n": 3002,
+            "macro_f1": 0.6154175755365022,
+            "macro_auroc": 0.871525940221443
+          }
+        }
+      },
+      "fused": {
+        "decision_disagreements": 0,
+        "max_probability_error": 0.000005081575587095877,
+        "max_score_error": 0.0012875199317932129,
+        "metrics": {
+          "full_3039": {
+            "n": 3039,
+            "macro_f1": 0.6113060989765615,
+            "macro_auroc": 0.8655061900008731
+          },
+          "corrected_3002": {
+            "n": 3002,
+            "macro_f1": 0.6154175755365022,
+            "macro_auroc": 0.8715259480720545
+          }
+        }
+      }
+    }
+  }
+}

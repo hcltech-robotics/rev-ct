@@ -1,0 +1,966 @@
+{
+  "n": 64,
+  "direct_fast_eligible": 64,
+  "rows": [
+    {
+      "volume": "valid_675_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_740_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_458_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_901_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_851_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_74_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_114_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_361_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_838_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_713_b_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_701_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_434_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_627_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_529_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_303_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_997_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1021_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_888_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1012_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_254_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_387_b_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_170_b_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_60_c_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1251_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_250_c_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1249_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_854_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_577_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_492_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_261_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_734_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_550_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1084_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_178_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_931_b_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_429_b_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_446_b_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1209_b_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_275_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1166_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_937_b_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_181_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_526_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1257_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1056_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1127_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_510_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_129_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_538_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_781_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1170_c_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1220_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_133_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_965_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_189_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1045_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_572_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1277_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1140_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1034_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_830_c_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_3_a_1.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_591_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "volume": "valid_1114_a_2.nii.gz",
+      "direct_fast_eligible": true,
+      "direction": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

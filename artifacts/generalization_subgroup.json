@@ -1,0 +1,61 @@
+{
+  "note": "calibrated per-label logistic; biases from train OOF only",
+  "overall_corrected_3002": {
+    "n": 3002,
+    "macro_f1": 0.6124,
+    "macro_auroc": 0.8715
+  },
+  "slice_spacing": {
+    "thin<=1.5mm": {
+      "n": 2894,
+      "macro_f1": 0.6102,
+      "macro_auroc": 0.8639
+    },
+    "medium1.5-3": {
+      "n": 143,
+      "macro_f1": 0.5373,
+      "macro_auroc": 0.8827
+    },
+    "thick>3mm": {
+      "n": 2,
+      "macro_f1": null,
+      "macro_auroc": null
+    }
+  },
+  "fov": {
+    "small<300mm": {
+      "n": 76,
+      "macro_f1": 0.5212,
+      "macro_auroc": 0.7602
+    },
+    "large>=300mm": {
+      "n": 2963,
+      "macro_f1": 0.6092,
+      "macro_auroc": 0.8697
+    }
+  },
+  "year": {
+    "<=2019": {
+      "n": 345,
+      "macro_f1": 0.6431,
+      "macro_auroc": 0.8373
+    },
+    ">=2020": {
+      "n": 2694,
+      "macro_f1": 0.5999,
+      "macro_auroc": 0.8672
+    }
+  },
+  "matrix": {
+    "512": {
+      "n": 1976,
+      "macro_f1": 0.6111,
+      "macro_auroc": 0.8602
+    },
+    "1024": {
+      "n": 938,
+      "macro_f1": 0.606,
+      "macro_auroc": 0.8747
+    }
+  }
+}

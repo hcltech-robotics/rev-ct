@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: >-
+  If you use RevCT in your work, cite this software release and report the
+  version and checkpoint revision used.
+type: software
+title: "RevCT: A typed decision model for computed tomography (CT)."
+authors:
+  - family-names: von Csefalvay
+    given-names: Chris
+    affiliation: HCLTech Robotics Intelligence CoE
+  - family-names: Foldi
+    given-names: Tamas
+version: 0.3.2
+doi: 10.57967/hf/10861
+date-released: "2026-10-11"
+repository-code: https://github.com/hcltech-robotics/rev-ct
+url: https://github.com/hcltech-robotics/rev-ct
+license: Apache-2.0

@@ -1,0 +1,61 @@
+{
+  "revision": "23e7aee707b884c8b97c6bfd5183b79ae76e574f",
+  "reference_revision": "f71d8484b698a1f9a8db3ee460d20f0f33dc013e",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "encoder_dtype": "torch.float32",
+  "encoder_bundled": true,
+  "encoder_buffers_equal_reference": true,
+  "volumes": [
+    {
+      "name": "valid_675_a_2.nii.gz",
+      "score_max_error": 0,
+      "decision_disagreements": 0
+    },
+    {
+      "name": "valid_740_a_2.nii.gz",
+      "score_max_error": 0,
+      "decision_disagreements": 0
+    },
+    {
+      "name": "valid_458_a_1.nii.gz",
+      "score_max_error": 0,
+      "decision_disagreements": 0
+    },
+    {
+      "name": "valid_901_a_2.nii.gz",
+      "score_max_error": 0,
+      "decision_disagreements": 0
+    },
+    {
+      "name": "valid_851_a_2.nii.gz",
+      "score_max_error": 0,
+      "decision_disagreements": 0
+    },
+    {
+      "name": "valid_74_a_1.nii.gz",
+      "score_max_error": 0,
+      "decision_disagreements": 0
+    },
+    {
+      "name": "valid_114_a_2.nii.gz",
+      "score_max_error": 0,
+      "decision_disagreements": 0
+    },
+    {
+      "name": "valid_361_a_2.nii.gz",
+      "score_max_error": 0,
+      "decision_disagreements": 0
+    }
+  ],
+  "n_volumes": 8,
+  "n_decisions": 144,
+  "score_max_error": 0,
+  "decision_disagreements": 0,
+  "schema_valid": true,
+  "typed_api_valid": true,
+  "save_pretrained_volume_roundtrip_score_error": 0,
+  "save_pretrained_volume_roundtrip_decision_disagreements": 0,
+  "native_bundled_encoder_feature_error": 0,
+  "job_id": "6acbbb1d095c578089320e08",
+  "job_url": "https://huggingface.co/jobs/chrisvoncsefalvay/6acbbb1d095c578089320e08"
+}

@@ -1,0 +1,437 @@
+{
+  "scope": "same 8 corrected scans; CPU only",
+  "samples": [
+    {
+      "volume": "valid_675_a_2.nii.gz",
+      "modes": {
+        "reference": {
+          "seconds": 5.102222154999936,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "no_copy": {
+          "seconds": 4.711679308000157,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_1": {
+          "seconds": 1.5182543170001281,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_4": {
+          "seconds": 1.1741440210000746,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        }
+      },
+      "load_s": 2.6558372849999614,
+      "input_shape": [
+        1,
+        512,
+        512,
+        512
+      ],
+      "stages": [
+        {
+          "name": "ToOrientation",
+          "seconds": 0.20800366899993605
+        },
+        {
+          "name": "Resample",
+          "seconds": 2.287819695000053
+        },
+        {
+          "name": "Clamp",
+          "seconds": 0.012278397000045516
+        },
+        {
+          "name": "RescaleIntensity",
+          "seconds": 0.07325708099983785
+        },
+        {
+          "name": "CropOrPad",
+          "seconds": 0.06338107000010496
+        }
+      ]
+    },
+    {
+      "volume": "valid_740_a_2.nii.gz",
+      "modes": {
+        "reference": {
+          "seconds": 8.408205394999868,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "no_copy": {
+          "seconds": 7.951271126999927,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_1": {
+          "seconds": 2.558796922000056,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_4": {
+          "seconds": 2.0976426359998186,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        }
+      },
+      "load_s": 4.565718782999966,
+      "input_shape": [
+        1,
+        1024,
+        1024,
+        222
+      ],
+      "stages": [
+        {
+          "name": "ToOrientation",
+          "seconds": 0.3288191049998659
+        },
+        {
+          "name": "Resample",
+          "seconds": 3.4899786980001863
+        },
+        {
+          "name": "Clamp",
+          "seconds": 0.005299349000097209
+        },
+        {
+          "name": "RescaleIntensity",
+          "seconds": 0.05417864099990766
+        },
+        {
+          "name": "CropOrPad",
+          "seconds": 0.023284491999902457
+        }
+      ]
+    },
+    {
+      "volume": "valid_458_a_1.nii.gz",
+      "modes": {
+        "reference": {
+          "seconds": 2.335308649999888,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "no_copy": {
+          "seconds": 2.2394091380001555,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_1": {
+          "seconds": 0.7945230029999948,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_4": {
+          "seconds": 0.6489380840000649,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        }
+      },
+      "load_s": 1.3585702539999147,
+      "input_shape": [
+        1,
+        512,
+        512,
+        277
+      ],
+      "stages": [
+        {
+          "name": "ToOrientation",
+          "seconds": 0.11244414199995845
+        },
+        {
+          "name": "Resample",
+          "seconds": 0.8294599120001749
+        },
+        {
+          "name": "Clamp",
+          "seconds": 0.0016802109998934611
+        },
+        {
+          "name": "RescaleIntensity",
+          "seconds": 0.02829393699994398
+        },
+        {
+          "name": "CropOrPad",
+          "seconds": 0.01440446000015072
+        }
+      ]
+    },
+    {
+      "volume": "valid_901_a_2.nii.gz",
+      "modes": {
+        "reference": {
+          "seconds": 4.154298863000122,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "no_copy": {
+          "seconds": 3.8775226679999832,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_1": {
+          "seconds": 1.4232025359999625,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_4": {
+          "seconds": 1.1316844489999767,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        }
+      },
+      "load_s": 2.0945838959999037,
+      "input_shape": [
+        1,
+        1024,
+        1024,
+        122
+      ],
+      "stages": [
+        {
+          "name": "ToOrientation",
+          "seconds": 0.17812555800014707
+        },
+        {
+          "name": "Resample",
+          "seconds": 1.845792045999815
+        },
+        {
+          "name": "Clamp",
+          "seconds": 0.0023432709999724466
+        },
+        {
+          "name": "RescaleIntensity",
+          "seconds": 0.045891921000020375
+        },
+        {
+          "name": "CropOrPad",
+          "seconds": 0.026167963999796484
+        }
+      ]
+    },
+    {
+      "volume": "valid_851_a_2.nii.gz",
+      "modes": {
+        "reference": {
+          "seconds": 3.7673167680000006,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "no_copy": {
+          "seconds": 3.6585134529998413,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_1": {
+          "seconds": 1.2261607780001214,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_4": {
+          "seconds": 0.9708226340001147,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        }
+      },
+      "load_s": 2.2386052889999064,
+      "input_shape": [
+        1,
+        512,
+        512,
+        447
+      ],
+      "stages": [
+        {
+          "name": "ToOrientation",
+          "seconds": 0.18672306300004493
+        },
+        {
+          "name": "Resample",
+          "seconds": 1.3364680250001584
+        },
+        {
+          "name": "Clamp",
+          "seconds": 0.0016666030001033505
+        },
+        {
+          "name": "RescaleIntensity",
+          "seconds": 0.03979240100011339
+        },
+        {
+          "name": "CropOrPad",
+          "seconds": 0.018119347000038033
+        }
+      ]
+    },
+    {
+      "volume": "valid_74_a_1.nii.gz",
+      "modes": {
+        "reference": {
+          "seconds": 8.984995450000042,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "no_copy": {
+          "seconds": 8.383065249000083,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_1": {
+          "seconds": 2.585216447999983,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_4": {
+          "seconds": 2.1051045059998614,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        }
+      },
+      "load_s": 4.764934304000008,
+      "input_shape": [
+        1,
+        1024,
+        1024,
+        233
+      ],
+      "stages": [
+        {
+          "name": "ToOrientation",
+          "seconds": 0.35848258100008934
+        },
+        {
+          "name": "Resample",
+          "seconds": 3.770662868000045
+        },
+        {
+          "name": "Clamp",
+          "seconds": 0.002655591000120694
+        },
+        {
+          "name": "RescaleIntensity",
+          "seconds": 0.050288787999988926
+        },
+        {
+          "name": "CropOrPad",
+          "seconds": 0.026137152000046626
+        }
+      ]
+    },
+    {
+      "volume": "valid_114_a_2.nii.gz",
+      "modes": {
+        "reference": {
+          "seconds": 1.9488143040000523,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "no_copy": {
+          "seconds": 1.7633275399998638,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_1": {
+          "seconds": 0.6545250320000378,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_4": {
+          "seconds": 0.5149625280000691,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        }
+      },
+      "load_s": 1.0494250189999548,
+      "input_shape": [
+        1,
+        512,
+        512,
+        224
+      ],
+      "stages": [
+        {
+          "name": "ToOrientation",
+          "seconds": 0.09081873399986762
+        },
+        {
+          "name": "Resample",
+          "seconds": 0.7881699780000417
+        },
+        {
+          "name": "Clamp",
+          "seconds": 0.0013968939999813301
+        },
+        {
+          "name": "RescaleIntensity",
+          "seconds": 0.02588872299998002
+        },
+        {
+          "name": "CropOrPad",
+          "seconds": 0.01373564699997587
+        }
+      ]
+    },
+    {
+      "volume": "valid_361_a_2.nii.gz",
+      "modes": {
+        "reference": {
+          "seconds": 4.244013223000138,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "no_copy": {
+          "seconds": 3.902959518999978,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_1": {
+          "seconds": 1.3314331260000927,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        },
+        "direct_itk_4": {
+          "seconds": 1.0584545660001368,
+          "max_pixel_error": 0,
+          "changed_voxels": 0
+        }
+      },
+      "load_s": 1.8762113660000068,
+      "input_shape": [
+        1,
+        1024,
+        1024,
+        112
+      ],
+      "stages": [
+        {
+          "name": "ToOrientation",
+          "seconds": 0.1750799349999852
+        },
+        {
+          "name": "Resample",
+          "seconds": 2.153544065999995
+        },
+        {
+          "name": "Clamp",
+          "seconds": 0.003115413999921657
+        },
+        {
+          "name": "RescaleIntensity",
+          "seconds": 0.049406055999952514
+        },
+        {
+          "name": "CropOrPad",
+          "seconds": 0.026777974999959042
+        }
+      ]
+    }
+  ]
+}

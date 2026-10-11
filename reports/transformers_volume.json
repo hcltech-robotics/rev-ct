@@ -1,0 +1,19 @@
+{
+  "volume": "valid_675_a_2.nii.gz",
+  "data_variant": "valid_fixed",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "encoder_dtype": "torch.float32",
+  "schema_valid": true,
+  "native_vs_transformers_score_error": 0,
+  "native_vs_transformers_decision_disagreements": 0,
+  "typed_answer": {
+    "type": "noul",
+    "noul": 0.1429,
+    "decision": "absent",
+    "confidence": 0.8571,
+    "probabilities": {
+      "true": 0.1429,
+      "false": 0.8571
+    }
+  }
+}

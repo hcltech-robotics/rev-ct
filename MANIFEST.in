@@ -1,0 +1,12 @@
+include README.md requirements.txt LICENSE NOTICE COLIPRI_LICENSE
+include CHANGELOG.md CITATION.cff
+include app.py
+recursive-include demo *.py *.css *.txt *.md *.json *.nii.gz
+recursive-include artifacts *.json *.py *.safetensors *.npz
+exclude artifacts/results.json
+recursive-include benchmarks *.py
+recursive-include benchmarks *.json
+recursive-include scripts *.py
+recursive-include docs *.md *.txt
+recursive-include reports *.md *.json
+recursive-include assets *.png *.jpg *.svg *.pdf

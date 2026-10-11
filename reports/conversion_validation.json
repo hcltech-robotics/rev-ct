@@ -1,0 +1,41 @@
+{
+  "n": 3039,
+  "n_unique": 3039,
+  "feature_revision": "8c002ae7cc0eca9e89a9f4a901af587f5e2fa2c6",
+  "modes": {
+    "reference": {
+      "decision_disagreements": 0,
+      "max_probability_error": 0,
+      "max_score_error": 5.960464477539063e-8,
+      "metrics": {
+        "full_3039": {
+          "n": 3039,
+          "macro_f1": 0.6113060989765615,
+          "macro_auroc": 0.8655061830400919
+        },
+        "corrected_3002": {
+          "n": 3002,
+          "macro_f1": 0.6154175755365022,
+          "macro_auroc": 0.871525940221443
+        }
+      }
+    },
+    "fused": {
+      "decision_disagreements": 0,
+      "max_probability_error": 0.000005081575587095877,
+      "max_score_error": 0.0012875199317932129,
+      "metrics": {
+        "full_3039": {
+          "n": 3039,
+          "macro_f1": 0.6113060989765615,
+          "macro_auroc": 0.8655061900008731
+        },
+        "corrected_3002": {
+          "n": 3002,
+          "macro_f1": 0.6154175755365022,
+          "macro_auroc": 0.8715259480720545
+        }
+      }
+    }
+  }
+}

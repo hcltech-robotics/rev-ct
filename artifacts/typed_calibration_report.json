@@ -1,0 +1,82 @@
+{
+  "ece_macro_before_isotonic": 0.1424,
+  "ece_macro_after_isotonic": 0.0251,
+  "ece_per_label": {
+    "Medical material": {
+      "before": 0.1072,
+      "after": 0.0157
+    },
+    "Arterial wall calcification": {
+      "before": 0.056,
+      "after": 0.0368
+    },
+    "Cardiomegaly": {
+      "before": 0.1164,
+      "after": 0.0168
+    },
+    "Pericardial effusion": {
+      "before": 0.2324,
+      "after": 0.0128
+    },
+    "Coronary artery wall calcification": {
+      "before": 0.078,
+      "after": 0.0256
+    },
+    "Hiatal hernia": {
+      "before": 0.221,
+      "after": 0.0225
+    },
+    "Lymphadenopathy": {
+      "before": 0.1462,
+      "after": 0.0854
+    },
+    "Emphysema": {
+      "before": 0.1893,
+      "after": 0.0231
+    },
+    "Atelectasis": {
+      "before": 0.1608,
+      "after": 0.0431
+    },
+    "Lung nodule": {
+      "before": 0.0461,
+      "after": 0.0279
+    },
+    "Lung opacity": {
+      "before": 0.0467,
+      "after": 0.0317
+    },
+    "Pulmonary fibrotic sequela": {
+      "before": 0.1495,
+      "after": 0.0235
+    },
+    "Pleural effusion": {
+      "before": 0.0431,
+      "after": 0.0112
+    },
+    "Mosaic attenuation pattern": {
+      "before": 0.1659,
+      "after": 0.0155
+    },
+    "Peribronchial thickening": {
+      "before": 0.243,
+      "after": 0.0137
+    },
+    "Consolidation": {
+      "before": 0.1145,
+      "after": 0.02
+    },
+    "Bronchiectasis": {
+      "before": 0.2484,
+      "after": 0.0142
+    },
+    "Interlobular septal thickening": {
+      "before": 0.1983,
+      "after": 0.0119
+    }
+  },
+  "macro_f1@0.5_calibrated": 0.6154,
+  "macro_auroc": 0.8715,
+  "cohort": "corrected-3002 (official no_chest_valid excluded)",
+  "schema_violations": 0
+}

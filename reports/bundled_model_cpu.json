@@ -1,0 +1,14 @@
+{
+  "offline_cpu_load": true,
+  "encoder_tensor_count": 380,
+  "encoder_weights_equal_upstream": true,
+  "nonpersistent_rotary_cache_correct": true,
+  "golden_feature_samples": 32,
+  "golden_decision_disagreements": 0,
+  "golden_score_max_error": 5.960464477539063e-08,
+  "save_pretrained_reload_score_error": 0,
+  "save_pretrained_reload_decision_disagreements": 0,
+  "checkpoint_bytes": 588703212,
+  "encoder_dtype": "torch.float32",
+  "encoder_text_model": null
+}
